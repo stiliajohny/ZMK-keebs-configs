@@ -17,10 +17,14 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
+    };
 
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <4>;
+    macros {
+        vscode_terminal: vscode_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "VSCODE_TERMINAL";
         };
     };
 
@@ -63,10 +67,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans            &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&vscode_terminal  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
