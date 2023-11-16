@@ -43,10 +43,10 @@
             //             └─────┴──────┴──────┘   └─────┴──────┴──┘
 
             bindings = <
-&kp ESCAPE     &kp Q  &kp W  &kp E               &kp R        &kp T         &kp Y             &kp U      &kp I      &kp O    &kp P     &none
-&mt LCTRL TAB  &kp A  &kp S  &kp D               &kp F        &kp G         &kp H             &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT      &kp Z  &kp X  &kp C               &kp V        &kp B         &kp N             &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &lt 2 LS(LEFT_GUI)  &lt 1 SPACE  &kp C_MUTE    &kp K_PLAY_PAUSE  &kp SPACE  &kp SPACE
+&kp ESCAPE     &kp Q  &kp W  &kp E           &kp R        &kp T         &kp Y             &kp U      &kp I      &kp O    &kp P     &kp BACKSPACE
+&mt LCTRL TAB  &kp A  &kp S  &kp D           &kp F        &kp G         &kp H             &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT      &kp Z  &kp X  &kp C           &kp V        &kp B         &kp N             &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                             &lt 2 LEFT_GUI  &lt 1 SPACE  &kp C_MUTE    &kp K_PLAY_PAUSE  &kp SPACE  &kp SPACE
             >;
 
             sensor-bindings =
@@ -56,10 +56,10 @@
 
         Settings {
             bindings = <
-&kp TAB          &kp N1           &kp N2           &kp N3           &kp N4           &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC
-&trans           &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                   &trans           &trans           &trans    &trans  &trans  &trans
+&kp TAB          &kp N1           &kp N2           &kp N3           &kp N4           &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
+&trans           &trans           &trans           &trans           &trans           &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+                                                   &trans           &trans           &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -67,10 +67,10 @@
 
         Code {
             bindings = <
-&none             &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none             &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&vscode_terminal  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                                &none  &none  &none    &none  &none  &none
+&none           &kp N1            &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8     &kp N9   &kp N0    &kp BSPC
+&none           &none             &none   &none   &none   &none     &none     &kp BSLH  &kp SQT    &kp SQT  &kp SEMI  &kp RET
+&kp LEFT_SHIFT  &vscode_terminal  &none   &none   &none   &none     &kp LBKT  &kp RBKT  &kp COMMA  &kp DOT  &kp FSLH  &none
+                                          &none   &none   &none     &none     &none     &none
             >;
         };
     };
