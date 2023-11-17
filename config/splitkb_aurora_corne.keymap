@@ -46,10 +46,10 @@
 
         Settings {
             bindings = <
-&kp TAB          &none            &kp UP_ARROW     &none            &none            &none     &none   &none   &none   &none   &none  &kp BSPC
-&trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT        &none            &none     &none   &none   &none   &none   &none  &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &trans    &trans  &trans  &trans  &trans  &none  &trans
-                                                   &trans           &trans           &trans    &trans  &trans  &trans
+&kp TAB           &none            &kp UP_ARROW     &none            &none            &none    &none  &none  &none  &none  &none  &kp BSPC
+&kp LEFT_CONTROL  &kp LEFT         &kp DOWN_ARROW   &kp RIGHT        &none            &none    &none  &none  &none  &none  &none  &none
+&rgb_ug RGB_TOG   &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &none    &none  &none  &none  &none  &none  &none
+                                                    &none            &none            &none    &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
