@@ -20,11 +20,11 @@
             label = "VSCODE_TERMINAL";
         };
 
-        MACOS_screenlock: MACOS_screenlock {
+        vscode_comment: vscode_comment {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
-            label = "MACOS_SCREENLOCK";
+            bindings = <&kp LEFT_GUI &kp FSLH>;
+            label = "VSCODE_COMMENT";
         };
     };
 
@@ -57,10 +57,10 @@
 
         Code {
             bindings = <
-&none           &kp LS(N1)        &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)  &kp BSPC
-&none           &none             &none       &none       &none       &none         &none       &kp BSLH    &kp SQT     &kp SQT     &kp SEMI    &kp RET
-&kp LEFT_SHIFT  &vscode_terminal  &none       &none       &none       &none         &kp LBKT    &kp RBKT    &kp COMMA   &kp DOT     &kp FSLH    &none
-                                              &none       &none       &none         &none       &none       &none
+&none           &kp LS(N1)        &kp LS(N2)       &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)  &kp BSPC
+&none           &none             &none            &none       &none       &none         &none       &kp BSLH    &kp SQT     &kp SQT     &kp SEMI    &kp RET
+&kp LEFT_SHIFT  &vscode_terminal  &vscode_comment  &none       &none       &none         &kp LBKT    &kp RBKT    &kp COMMA   &kp DOT     &kp FSLH    &none
+                                                   &none       &none       &none         &none       &none       &none
             >;
         };
 
