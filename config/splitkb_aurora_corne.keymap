@@ -66,10 +66,10 @@
 
         OS_shit {
             bindings = <
-&none  &kp C_AL_LOCK  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none  &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                             &none  &none  &none    &none  &none  &none
+&sys_reset  &kp C_AL_LOCK  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none       &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+&none       &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                                  &none  &none  &none    &none  &none  &none
             >;
 
             label = "OS shit";
