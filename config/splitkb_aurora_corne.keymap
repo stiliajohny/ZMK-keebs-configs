@@ -16,7 +16,7 @@
         vscode_terminal: vscode_terminal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp LS(LC(GRAVE))>;
             label = "VSCODE_TERMINAL";
         };
     };
