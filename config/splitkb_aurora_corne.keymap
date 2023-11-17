@@ -29,68 +29,16 @@
     };
 
     behaviors {
-            ht: hold_tap {
-                compatible = "zmk,behavior-hold-tap";
-                label = "HOLD_TAP";
-                #binding-cells = <2>;
-                tapping-term-ms = <200>;
-                quick_tap_ms = <0>;
-                flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
-            };
-            lh_hm: left_hand_homerow_mods {
-                compatible = "zmk,behavior-hold-tap";
-                label = "LEFT_HAND_HOMEROW_MODS";
-                #binding-cells = <2>;
-                tapping-term-ms = <300>;
-                quick-tap-ms = <150>;
-                flavor = "balanced";
-                hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
-                hold-trigger-on-release;
-                bindings = <&kp>, <&kp>;
-            };  
-            rh_hm: right_hand_homerow_mods {    
-                compatible = "zmk,behavior-hold-tap";
-                label = "RIGHT_HAND_HOMEROW_MODS";
-                #binding-cells = <2>;
-                tapping-term-ms = <300>;
-                quick-tap-ms = <150>;
-                global-quick-tap;
-                flavor = "balanced";
-                hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
-                hold-trigger-on-release;
-                bindings = <&kp>, <&kp>;
-                
-            };
-            excumflex: excumflex {
-                compatible = "zmk,behavior-mod-morph";
-                label = "EXCUMFLEX";
-                #binding-cells = <0>;
-                bindings = <&kp FR_CIRC>, <&kp FR_EXLM>;
-                mods = <(MOD_LSFT)>;
-            };
-            virgpts: virgpts {
-                compatible = "zmk,behavior-mod-morph";
-                label = "VIRGPTS";
-                #binding-cells = <0>;
-                bindings = <&kp FR_COMM>, <&kp FR_SCLN>;
-                mods = <(MOD_LSFT)>;
-            };
-            points: points {
-                compatible = "zmk,behavior-mod-morph";
-                label = "POINTS";
-                #binding-cells = <0>;
-                bindings = <&kp FR_DOT>, <&kp FR_COLN>;
-                mods = <(MOD_LSFT)>;
-            };
-            questionstrophe: questionstrophe {
-                compatible = "zmk,behavior-mod-morph";
-                label = "QUESTIONSTROPHE";
-                #binding-cells = <0>;
-                bindings = <&kp FR_QUOT>, <&kp FR_QUES>;
-                mods = <(MOD_LSFT)>;
-            };
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
