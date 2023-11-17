@@ -46,9 +46,9 @@
 
         Settings {
             bindings = <
-&kp TAB          &none            &kp UP_ARROW     &none            &none            &none     &none   &none   &none           &mmv MOVE_UP    &mwh SCROLL_UP    &kp BSPC
-&trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT        &none            &none     &none   &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &trans
-&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &trans    &trans  &trans  &trans          &trans          &mwh SCROLL_DOWN  &trans
+&kp TAB          &none            &kp UP_ARROW     &none            &none            &none     &none   &none   &none   &none   &none  &kp BSPC
+&trans           &kp LEFT         &kp DOWN_ARROW   &kp RIGHT        &none            &none     &none   &none   &none   &none   &none  &trans
+&rgb_ug RGB_TOG  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_BRD  &rgb_ug RGB_BRD  &trans    &trans  &trans  &trans  &trans  &none  &trans
                                                    &trans           &trans           &trans    &trans  &trans  &trans
             >;
 
