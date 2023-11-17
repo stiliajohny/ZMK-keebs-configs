@@ -23,7 +23,7 @@
         vscode_comment: vscode_comment {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp FSLH>;
+            bindings = <&kp LG(FSLH)>;
             label = "VSCODE_COMMENT";
         };
     };
