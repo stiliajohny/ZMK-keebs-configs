@@ -80,6 +80,8 @@
 &kp LEFT_CONTROL  &vscode_terminal  &vscode_comment            &none       &none       &none         &kp LBKT    &kp RBKT    &kp COMMA   &kp DOT     &kp FSLH    &none
                                                                &none       &none       &none         &none       &none       &none
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         OS_shit {
