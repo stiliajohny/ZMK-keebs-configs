@@ -42,6 +42,7 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LGUI &kp LALT &kp DNAR &macro_release &kp LGUI &kp LALT>;
         };
+
         macro_multiple_cursors_up: macro_multiple_cursors_up {
             label = "macro_multiple_cursors_up";
             compatible = "zmk,behavior-macro";
@@ -49,13 +50,6 @@
             bindings = <&macro_press &kp LGUI &kp LALT &kp UPAR &macro_release &kp LGUI &kp LALT>;
         };
 
-        // Delete the Line
-        macro_delete_line: macro_delete_line {
-            label = "macro_delete_line";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI &kp LSHFT &kp K &macro_release &kp LGUI &kp LSHFT>;
-        };
 
     };
 
