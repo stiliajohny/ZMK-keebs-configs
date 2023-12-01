@@ -29,6 +29,8 @@
                 <&macro_release>,
                 <&kp LGUI &kp LSHFT>;
         };
+
+
     };
 
     behaviors {
