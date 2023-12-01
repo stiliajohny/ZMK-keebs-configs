@@ -1,0 +1,174 @@
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layers:
+  qwerty:
+  - ESCAPE
+  - {t: Q, h: '1'}
+  - {t: W, h: '2'}
+  - {t: E, h: '3'}
+  - {t: R, h: '4'}
+  - {t: T, h: '5'}
+  - {t: Y, h: '6'}
+  - {t: U, h: '7'}
+  - {t: I, h: '8'}
+  - {t: O, h: '9'}
+  - {t: P, h: '0'}
+  - BACKSPACE
+  - {t: TAB, h: LCTRL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - ENTER
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - {t: MUTE, h: PLAY PAUSE}
+  - {t: LGUI, h: qwerty}
+  - {t: SPACE, h: Settings}
+  - {t: SPACE, h: qwerty}
+  - {t: RIGHT GUI, h: qwerty}
+  - {t: STOP, h: STOP}
+  Settings:
+  - ''
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BSPC
+  - BT PRV
+  - BT NXT
+  - RGB EFR
+  - RGB EFF
+  - RGB SPD
+  - RGB SPI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB TOG
+  - RGB COLOR HSB(0,100,50)
+  - RGB COLOR HSB(116,95,49)
+  - RGB COLOR HSB(239,95,47)
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  '5':
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BSPC
+  - TAB
+  - '-'
+  - /
+  - ':'
+  - ;
+  - (
+  - )
+  - '#'
+  - SPACE
+  - SPACE
+  - '"'
+  - RET
+  - LSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  - ','
+  - '?'
+  - SPACE
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RSHFT
+  - LCTRL
+  - LALT
+  - {t: SPACE, h: LEFT META}
+  - {t: SPACE, h: RIGHT META}
+  - RALT
+  - LCTRL
+  Symbols:
+  - ESC
+  - '['
+  - {t: RS(RIGHT BRACKET), h: UP ARROW}
+  - '{'
+  - '}'
+  - '#'
+  - '%'
+  - ^
+  - '*'
+  - +
+  - '='
+  - {t: BACKSPACE, h: DELETE}
+  - {t: TAB, h: LCTRL}
+  - {t: _, h: LEFT ARROW}
+  - {t: \, h: DOWN ARROW}
+  - {t: '|', h: RIGHT}
+  - '~'
+  - <
+  - '>'
+  - '#'
+  - SPACE
+  - ''''
+  - \
+  - RET
+  - LSHFT
+  - '`'
+  - SPACE
+  - .
+  - ','
+  - '?'
+  - SPACE
+  - ''''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RSHFT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
