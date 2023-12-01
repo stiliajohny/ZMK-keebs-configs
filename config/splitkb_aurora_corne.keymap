@@ -17,16 +17,18 @@
         //
         // VSCODE MACROS
         //
-
         // Command Palette
+
         macro_cmd_palette: macro_cmd_palette {
             label = "macro_cmd_palette";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI &kp LSHFT &kp P &macro_release &kp LGUI &kp LSHFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHFT &kp P>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHFT>;
         };
-
-
     };
 
     behaviors {
@@ -51,7 +53,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty_layer {
+        QWERTY {
             bindings = <
 &kp ESCAPE      &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P    &kp BACKSPACE
 &ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SINGLE_QUOTE  &kp ENTER
@@ -60,6 +62,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
+            label = "qwerty";
         };
 
         Settings {
@@ -73,16 +76,18 @@
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
-        layer_5 {
+        Symbols1 {
             bindings = <
 &kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8     &kp N9     &kp N0             &kp BSPC
 &kp TAB    &kp MINUS  &kp FSLH  &kp COLON  &kp SEMI   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp POUND  &kp SPACE  &kp SPACE  &kp DOUBLE_QUOTES  &kp RET
 &kp LSHFT  &trans     &trans    &kp DOT    &kp COMMA  &kp QUESTION            &kp SPACE              &kp SQT    &trans     &trans     &trans             &kp RSHFT
                                 &kp LCTRL  &kp LALT   &mt LEFT_META SPACE     &mt RIGHT_META SPACE   &kp RALT   &kp LCTRL
             >;
+
+            label = "symbols1";
         };
 
-        Symbols {
+        Symbols2 {
             bindings = <
 &kp ESC        &kp LBKT                   &mt UP_ARROW RS(RIGHT_BRACKET)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &mt DELETE BACKSPACE
 &mt LCTRL TAB  &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp SPACE     &kp SQT   &kp BSLH   &kp RET
@@ -90,7 +95,7 @@
                                                                           &trans          &trans           &trans           &trans            &trans     &trans
             >;
 
-            label = "Symbols";
+            label = "symbols2";
         };
     };
 };
