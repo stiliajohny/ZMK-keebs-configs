@@ -30,6 +30,28 @@
                 <&kp LGUI &kp LSHFT>;
         };
 
+        // Delete the Line
+        macro_delete_line: macro_delete_line {
+            label = "macro_delete_line";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LSHFT &kp K &macro_release &kp LGUI &kp LSHFT>;
+        };
+
+        // Copy Line Up/Down
+        macro_copy_line_up: macro_copy_line_up {
+            label = "macro_copy_line_up";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT &kp LSHFT &kp UPAR &macro_release &kp LALT &kp LSHFT>;
+        };
+        macro_copy_line_down: macro_copy_line_down {
+            label = "macro_copy_line_down";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT &kp LSHFT &kp DNAR &macro_release &kp LALT &kp LSHFT>;
+        };
+
 
     };
 
