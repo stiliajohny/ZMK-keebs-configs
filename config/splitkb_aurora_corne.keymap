@@ -35,22 +35,6 @@
             bindings = <&macro_press &kp LGUI &kp LSHFT &kp F &macro_release &kp LGUI &kp LSHFT>;
         };
 
-        // Multiple Cursors
-        macro_multiple_cursors_down: macro_multiple_cursors_down {
-            label = "macro_multiple_cursors_down";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI &kp LALT &kp DNAR &macro_release &kp LGUI &kp LALT>;
-        };
-
-        macro_multiple_cursors_up: macro_multiple_cursors_up {
-            label = "macro_multiple_cursors_up";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI &kp LALT &kp UPAR &macro_release &kp LGUI &kp LALT>;
-        };
-
-
     };
 
     behaviors {

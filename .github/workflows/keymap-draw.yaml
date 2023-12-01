@@ -1,5 +1,4 @@
-# Example for using the keymap-drawer ZMK user config workflow
-name: Draw ZMK keymaps
+name: ZMK firmware and keymap drawer
 on:
   workflow_dispatch: # can be triggered manually
   push: # automatically run on changes to following paths
@@ -10,7 +9,13 @@ on:
       # - 'config/boards/*/*/*.keymap'
 
 jobs:
+  build:
+    name: Build firmware
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
   draw:
+    name: Draw keymaps
+    needs: build
     uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
     permissions:
       contents: write # allow workflow to commit to the repo
