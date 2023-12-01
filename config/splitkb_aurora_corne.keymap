@@ -64,7 +64,7 @@
 
         Settings {
             bindings = <
-&kp TAB          &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
+&none            &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
 &bt BT_PRV       &bt BT_NXT                       &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI    &none  &none  &none  &none  &none  &none
 &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(116,95,49)  &rgb_ug RGB_COLOR_HSB(239,95,47)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none
                                                                                     &none                             &none            &none              &none  &none  &none
@@ -75,9 +75,9 @@
 
         layer_5 {
             bindings = <
-&kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8         &kp N9       &kp N0             &kp BSPC
-&kp TAB    &kp MINUS  &kp FSLH  &kp COLON  &kp SEMI   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp POUND  &kp AMPERSAND  &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp RET
-&kp LSHFT  &trans     &trans    &kp DOT    &kp COMMA  &kp QUESTION            &kp EXCLAMATION        &kp SQT    &trans         &trans       &trans             &kp RSHFT
+&kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8     &kp N9     &kp N0             &kp BSPC
+&kp TAB    &kp MINUS  &kp FSLH  &kp COLON  &kp SEMI   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp POUND  &kp SPACE  &kp SPACE  &kp DOUBLE_QUOTES  &kp RET
+&kp LSHFT  &trans     &trans    &kp DOT    &kp COMMA  &kp QUESTION            &kp SPACE              &kp SQT    &trans     &trans     &trans             &kp RSHFT
                                 &kp LCTRL  &kp LALT   &mt LEFT_META SPACE     &mt RIGHT_META SPACE   &kp RALT   &kp LCTRL
             >;
         };
@@ -85,8 +85,8 @@
         Symbols {
             bindings = <
 &kp ESC        &kp LBKT                   &mt UP_ARROW RS(RIGHT_BRACKET)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &mt DELETE BACKSPACE
-&mt LCTRL TAB  &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp DOLLAR    &kp SQT   &kp BSLH   &kp RET
-&kp LSHFT      &kp GRAVE                  &kp SPACE                       &kp DOT         &kp COMMA        &kp QUESTION     &kp EXCLAMATION   &kp SQT    &trans        &trans    &trans     &kp RSHFT
+&mt LCTRL TAB  &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp SPACE     &kp SQT   &kp BSLH   &kp RET
+&kp LSHFT      &kp GRAVE                  &kp SPACE                       &kp DOT         &kp COMMA        &kp QUESTION     &kp SPACE         &kp SQT    &trans        &trans    &trans     &kp RSHFT
                                                                           &trans          &trans           &trans           &trans            &trans     &trans
             >;
 
