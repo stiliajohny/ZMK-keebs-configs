@@ -14,19 +14,134 @@
     };
 
     macros {
-        vscode_terminal: vscode_terminal {
+        //
+        // VSCODE MACROS
+        //
+
+        // Command Palette
+        macro_cmd_palette: macro_cmd_palette {
+            label = "macro_cmd_palette";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LC(GRAVE))>;
-            label = "VSCODE_TERMINAL";
+            bindings = <&macro_press &kp LGUI &kp LSHFT &kp P &macro_release &kp LGUI &kp LSHFT>;
         };
 
-        vscode_comment: vscode_comment {
+        // Search Files
+        macro_search_files: macro_search_files {
+            label = "macro_search_files";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(FSLH)>;
-            label = "VSCODE_COMMENT";
+            bindings = <&macro_press &kp LGUI &kp LSHFT &kp F &macro_release &kp LGUI &kp LSHFT>;
         };
+
+        // Multiple Cursors
+        macro_multiple_cursors_down: macro_multiple_cursors_down {
+            label = "macro_multiple_cursors_down";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LALT &kp DNAR &macro_release &kp LGUI &kp LALT>;
+        };
+        macro_multiple_cursors_up: macro_multiple_cursors_up {
+            label = "macro_multiple_cursors_up";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LALT &kp UPAR &macro_release &kp LGUI &kp LALT>;
+        };
+
+        // Delete the Line
+        macro_delete_line: macro_delete_line {
+            label = "macro_delete_line";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LSHFT &kp K &macro_release &kp LGUI &kp LSHFT>;
+        };
+
+        // Copy Line Up/Down
+        macro_copy_line_up: macro_copy_line_up {
+            label = "macro_copy_line_up";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT &kp LSHFT &kp UPAR &macro_release &kp LALT &kp LSHFT>;
+        };
+        macro_copy_line_down: macro_copy_line_down {
+            label = "macro_copy_line_down";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT &kp LSHFT &kp DNAR &macro_release &kp LALT &kp LSHFT>;
+        };
+
+        // Preview Markdown
+        macro_preview_markdown: macro_preview_markdown {
+            label = "macro_preview_markdown";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LSHFT &kp V &macro_release &kp LGUI &kp LSHFT>;
+        };
+
+        // Toggle Sidebar
+        macro_toggle_sidebar: macro_toggle_sidebar {
+            label = "macro_toggle_sidebar";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LGUI &kp B>;
+        };
+
+        // Rename Component
+        macro_rename_component: macro_rename_component {
+            label = "macro_rename_component";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp F2>;
+        };
+
+        // Select Current Line
+        macro_select_current_line: macro_select_current_line {
+            label = "macro_select_current_line";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LGUI &kp L>;
+        };
+
+        // Toggle Terminal
+        macro_toggle_terminal: macro_toggle_terminal {
+            label = "macro_toggle_terminal";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LGUI &kp GRAVE>;
+        };
+
+        // Format Document
+        macro_format_document: macro_format_document {
+            label = "macro_format_document";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LSHFT &kp LALT &kp F &macro_release &kp LSHFT &kp LALT>;
+        };
+
+        // Split Editor
+        macro_split_editor: macro_split_editor {
+            label = "macro_split_editor";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LGUI &kp BSLS>;
+        };
+
+        // Search File
+        macro_search_file: macro_search_file {
+            label = "macro_search_file";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LGUI &kp P>;
+        };
+
+        // Select the Current Word
+        macro_select_current_word: macro_select_current_word {
+            label = "macro_select_current_word";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LGUI &kp D>;
+        };
+
     };
 
     behaviors {
