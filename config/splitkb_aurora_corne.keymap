@@ -106,10 +106,10 @@
 
         Symbols {
             bindings = <
-&kp ESC    &kp LBKT        &kp RBKT   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &kp BSPC
-&kp TAB    &kp UNDERSCORE  &kp BSLH   &kp PIPE        &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp DOLLAR    &kp SQT   &kp BSLH   &kp RET
-&kp LSHFT  &kp GRAVE       &kp SPACE  &kp DOT         &kp COMMA        &kp QUESTION     &kp EXCLAMATION   &kp SQT    &trans        &trans    &trans     &kp RSHFT
-                                      &trans          &trans           &trans           &trans            &trans     &trans
+&kp ESC    &kp LBKT                   &mt UP_ARROW RS(RIGHT_BRACKET)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &kp BSPC
+&kp TAB    &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp DOLLAR    &kp SQT   &kp BSLH   &kp RET
+&kp LSHFT  &kp GRAVE                  &kp SPACE                       &kp DOT         &kp COMMA        &kp QUESTION     &kp EXCLAMATION   &kp SQT    &trans        &trans    &trans     &kp RSHFT
+                                                                      &trans          &trans           &trans           &trans            &trans     &trans
             >;
 
             label = "Symbols";
