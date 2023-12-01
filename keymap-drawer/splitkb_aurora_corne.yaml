@@ -86,7 +86,7 @@ layers:
   - ''
   - ''
   - ''
-  '5':
+  symbols1:
   - ESC
   - '1'
   - '2'
@@ -129,7 +129,7 @@ layers:
   - {t: SPACE, h: RIGHT META}
   - RALT
   - LCTRL
-  Symbols:
+  symbols2:
   - ESC
   - '['
   - {t: RS(RIGHT BRACKET), h: UP ARROW}
