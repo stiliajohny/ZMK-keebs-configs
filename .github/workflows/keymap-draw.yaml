@@ -26,14 +26,3 @@ jobs:
       output_folder: "keymap-drawer" # path to save produced SVG and keymap YAML files
       parse_args: "" # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: "" # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
-
-  publish:
-    name: Create HTML
-    needs: draw
-    runs-on: windows-latest
-    steps:
-      - name: Convert Markdown to HTML
-        uses: natescherer/markdown-to-html-with-github-style-action@v1.1.0
-        with:
-          path: README.md,
-          outputpath: ./

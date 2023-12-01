@@ -8,7 +8,7 @@ Update the `./config/{*.conf,*.keymap}` files as needed.
 
 > Good tool to edit the keymap: is [keymap-editor](https://nickcoutsos.github.io/keymap-editor/)
 
-![Keyboard](./.assets/zmk-aurora-corne-1.0-nice-nano.jpg)
+![Keyboard](https://github.com/stiliajohny/zmk-config-aurora-corne-1.0-nice-nano/blob/master/.assets/zmk-aurora-corne-1.0-nice-nano.jpg?raw=true)
 
 ## My Keymap
 
