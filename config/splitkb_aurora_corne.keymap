@@ -12,21 +12,9 @@
 
     macros {
 
-        // Open VSCode Terminal
-        vscode_terminal: vscode_terminal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(GRAVE))>;
-            label = "VSCODE_TERMINAL";
-        };
-
-        // VSCode Comment Line
-        vscode_comment: vscode_comment {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(FSLH)>;
-            label = "VSCODE_COMMENT";
-        };
+//
+// EMOGI MACROS
+//
 
         // Top Row (Heart Emojis)
         emoji_red_heart: emoji_red_heart {
@@ -48,7 +36,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT &kp LANGLE &kp N3 &macro_release &kp LSHFT>;
-
+        };
         // Top Row (Happy Emojis)
         emoji_laugh_tears: emoji_laugh_tears {
             label = "emoji_laugh_tears";
@@ -56,17 +44,20 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp J &kp O &kp Y &kp SEMI>;
         };
+
         emoji_smile: emoji_smile {
             label = "emoji_smile";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT &kp RPAR &macro_release &kp LSHFT>;
         };
+
         emoji_rofl: emoji_rofl {
             label = "emoji_rofl";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp R &kp O &kp F &kp L &kp SEMI>;
+        };
 
        // Middle Row (Hand Gestures)
         emoji_thumbs_up: emoji_thumbs_up {
@@ -75,17 +66,20 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp P &kp L &kp S &kp N1 &kp SEMI>;
         };
+
         emoji_thumbs_down: emoji_thumbs_down {
             label = "emoji_thumbs_down";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp M &kp I &kp N &kp S &kp N1 &kp SEMI>;
         };
+
         emoji_crossed_fingers: emoji_crossed_fingers {
             label = "emoji_crossed_fingers";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp C &kp R &kp O &kp S &kp S &kp E &kp D &kp UNDS &kp F &kp I &kp N &kp G &kp E &kp R &kp S &kp SEMI>;
+        };
 
         // Middle Row (Celebratory Emojis)
         emoji_party_popper: emoji_party_popper {
@@ -94,17 +88,20 @@
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp T &kp A &kp D &kp A &kp SEMI>;
         };
+
         emoji_birthday_cake: emoji_birthday_cake {
             label = "emoji_birthday_cake";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp B &kp I &kp R &kp T &kp H &kp D &kp A &kp Y &kp SEMI>;
         };
+
         emoji_party_face: emoji_party_face {
             label = "emoji_party_face";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp P &kp A &kp R &kp T &kp Y &kp I &kp N &kp G &kp UNDS &kp F &kp A &kp C &kp E &kp SEMI>;
+        };
 
         // Bottom Row (Miscellaneous Emojis)
         emoji_star: emoji_star {
@@ -113,17 +110,20 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT &kp N8 &macro_release &kp LSHFT>;
         };
+
         emoji_fire: emoji_fire {
             label = "emoji_fire";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp F &kp I &kp R &kp E &kp SEMI>;
         };
+
         emoji_rainbow: emoji_rainbow {
             label = "emoji_rainbow";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp R &kp A &kp I &kp N &kp B &kp O &kp W &kp SEMI>;
+        };
 
         // Bottom Row (Expressive Faces)
         emoji_crying_face: emoji_crying_face {
@@ -132,17 +132,20 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT &kp COLN &kp QUOT &macro_release &kp LSHFT &kp LPAR>;
         };
+
         emoji_angry_face: emoji_angry_face {
             label = "emoji_angry_face";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT &kp GT &macro_release &kp LSHFT &kp COLN &kp LPAR>;
         };
+
         emoji_thinking_face: emoji_thinking_face {
             label = "emoji_thinking_face";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp SEMI &kp T &kp H &kp I &kp N &kp K &kp I &kp N &kp G &kp SEMI>;
+        };
 
         // Thumb Keys
         emoji_smiling_face_open_mouth: emoji_smiling_face_open_mouth {
@@ -151,6 +154,7 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT &kp COLN &macro_release &kp LSHFT &kp D>;
         };
+
         emoji_smiling_face_sunglasses: emoji_smiling_face_sunglasses {
             label = "emoji_smiling_face_sunglasses";
             compatible = "zmk,behavior-macro";
