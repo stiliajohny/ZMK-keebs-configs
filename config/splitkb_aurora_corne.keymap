@@ -94,6 +94,33 @@
 
             label = "OS shit";
         };
+
+        layer_4 {
+            bindings = <
+&kp ESC    &kp Q  &kp W  &kp E   &kp R   &kp T        &kp Y      &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D   &kp F   &kp G        &kp H      &kp J   &kp K      &kp L    &trans    &kp ENTER
+&kp LSHFT  &kp Z  &kp X  &kp C   &kp V   &kp B        &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                         &trans  &trans  &kp SPACE    &kp SPACE  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8         &kp N9       &kp N0             &kp BSPC
+&kp TAB    &kp MINUS  &kp FSLH  &kp COLON  &kp SEMI   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp POUND  &kp AMPERSAND  &kp AT_SIGN  &kp DOUBLE_QUOTES  &kp RET
+&kp LSHFT  &trans     &trans    &kp DOT    &kp COMMA  &kp QUESTION            &kp EXCLAMATION        &kp SQT    &trans         &trans       &trans             &kp RSHFT
+                                &kp LCTRL  &kp LALT   &mt LEFT_META SPACE     &mt RIGHT_META SPACE   &kp RALT   &kp LCTRL
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&kp ESC    &kp LBKT       &kp RBKT   &kp LS(LBRC)  &kp LS(RBRC)   &kp LA(POUND)    &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(STAR)  &kp LS(PLUS)  &kp EQUAL  &kp BSPC
+&kp TAB    &kp LS(UNDER)  &kp BSLH   &kp LS(PIPE)  &kp LS(TILDE)  &kp LS(LT)       &kp LS(GT)     &kp LA(POUND)  &kp LS(DLLR)  &kp SQT       &kp BSLH   &kp RET
+&kp LSHFT  &kp GRAVE      &kp SPACE  &kp DOT       &kp COMMA      &kp LS(QMARK)    &kp LS(EXCL)   &kp SQT        &trans        &trans        &trans     &kp RSHFT
+                                     &trans        &trans         &trans           &trans         &trans         &trans
+            >;
+        };
     };
 };
 
