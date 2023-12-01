@@ -56,7 +56,7 @@
 &kp ESCAPE      &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P    &kp BACKSPACE
 &ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SINGLE_QUOTE  &kp ENTER
 &kp LEFT_SHIFT  &kp Z           &kp X           &kp C                    &kp V           &kp B             &kp N           &kp M            &kp COMMA          &kp DOT         &kp FSLH          &kp RSHFT
-                                                &ht C_PLAY_PAUSE C_MUTE  &lt 2 LGUI      &lt 1 SPACE       &lt 3 SPACE     &lt 2 RIGHT_GUI  &ht C_STOP C_STOP
+                                                &ht C_PLAY_PAUSE C_MUTE  &lt 0 LGUI      &lt 1 SPACE       &lt 0 SPACE     &lt 0 RIGHT_GUI  &ht C_STOP C_STOP
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
@@ -73,28 +73,6 @@
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
-        Code {
-            bindings = <
-&none             &kp LS(N1)        &ht UP_ARROW LS(NUMBER_1)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp RS(N6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)  &kp BSPC
-&none             &kp LEFT          &kp DOWN                   &kp RIGHT   &none       &none         &none       &kp BSLH    &kp SQT     &kp SQT     &kp SEMI    &kp RET
-&kp LEFT_CONTROL  &vscode_terminal  &vscode_comment            &none       &none       &none         &kp LBKT    &kp RBKT    &kp COMMA   &kp DOT     &kp FSLH    &none
-                                                               &none       &none       &none         &none       &none       &none
-            >;
-
-            sensor-bindings = <&inc_dec_kp 0 0>;
-        };
-
-        OS_shit {
-            bindings = <
-&sys_reset  &kp C_AL_LOCK  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none       &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-&none       &none          &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
-                                  &none  &none  &none    &none  &none  &none
-            >;
-
-            label = "OS shit";
-        };
-
         layer_5 {
             bindings = <
 &kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8         &kp N9       &kp N0             &kp BSPC
@@ -106,10 +84,10 @@
 
         Symbols {
             bindings = <
-&kp ESC    &kp LBKT                   &mt UP_ARROW RS(RIGHT_BRACKET)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &kp BSPC
-&kp TAB    &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp DOLLAR    &kp SQT   &kp BSLH   &kp RET
-&kp LSHFT  &kp GRAVE                  &kp SPACE                       &kp DOT         &kp COMMA        &kp QUESTION     &kp EXCLAMATION   &kp SQT    &trans        &trans    &trans     &kp RSHFT
-                                                                      &trans          &trans           &trans           &trans            &trans     &trans
+&kp ESC        &kp LBKT                   &mt UP_ARROW RS(RIGHT_BRACKET)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &mt DELETE BACKSPACE
+&mt LCTRL TAB  &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp DOLLAR    &kp SQT   &kp BSLH   &kp RET
+&kp LSHFT      &kp GRAVE                  &kp SPACE                       &kp DOT         &kp COMMA        &kp QUESTION     &kp EXCLAMATION   &kp SQT    &trans        &trans    &trans     &kp RSHFT
+                                                                          &trans          &trans           &trans           &trans            &trans     &trans
             >;
 
             label = "Symbols";
