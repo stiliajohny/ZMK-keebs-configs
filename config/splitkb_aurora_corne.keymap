@@ -12,7 +12,21 @@
 
     macros {
 
+        // Open VSCode Terminal
+        vscode_terminal: vscode_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(GRAVE))>;
+            label = "VSCODE_TERMINAL";
+        };
 
+        // VSCode Comment Line
+        vscode_comment: vscode_comment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(FSLH)>;
+            label = "VSCODE_COMMENT";
+        };
 
         // Top Row (Heart Emojis)
         emoji_red_heart: emoji_red_heart {
@@ -21,7 +35,6 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LSHFT &kp LANGLE &kp N3 &macro_release &kp LSHFT>;
         };
-
 
 
     };
