@@ -19,15 +19,34 @@
         //
         // Command Palette
 
+        // Command Palette
         macro_cmd_palette: macro_cmd_palette {
             label = "macro_cmd_palette";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI &kp LSHFT &kp P>,
-                <&macro_release>,
-                <&kp LGUI &kp LSHFT>;
+            bindings = <&macro_press &kp LGUI &kp LSHFT &kp P &macro_release &kp LGUI &kp LSHFT>;
+        };
+
+        // Search Files
+        macro_search_files: macro_search_files {
+            label = "macro_search_files";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LSHFT &kp F &macro_release &kp LGUI &kp LSHFT>;
+        };
+
+        // Multiple Cursors
+        macro_multiple_cursors_down: macro_multiple_cursors_down {
+            label = "macro_multiple_cursors_down";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LALT &kp DNAR &macro_release &kp LGUI &kp LALT>;
+        };
+        macro_multiple_cursors_up: macro_multiple_cursors_up {
+            label = "macro_multiple_cursors_up";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI &kp LALT &kp UPAR &macro_release &kp LGUI &kp LALT>;
         };
 
         // Delete the Line
@@ -37,8 +56,6 @@
             #binding-cells = <0>;
             bindings = <&macro_press &kp LGUI &kp LSHFT &kp K &macro_release &kp LGUI &kp LSHFT>;
         };
-
-
 
     };
 
