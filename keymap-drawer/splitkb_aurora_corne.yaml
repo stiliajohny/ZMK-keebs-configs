@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   qwerty:
-  - ESCAPE
+  - {t: ESCAPE, h: Settings}
   - {t: Q, h: '1'}
   - {t: W, h: '2'}
   - {t: E, h: '3'}
@@ -12,7 +12,7 @@ layers:
   - {t: I, h: '8'}
   - {t: O, h: '9'}
   - {t: P, h: '0'}
-  - BACKSPACE
+  - {t: BACKSPACE, h: DELETE}
   - {t: TAB, h: LCTRL}
   - A
   - S
@@ -38,10 +38,10 @@ layers:
   - /
   - RSHFT
   - {t: MUTE, h: PLAY PAUSE}
-  - {t: LGUI, h: qwerty}
+  - {t: LGUI, h: symbols2}
   - {t: SPACE, h: symbols1}
   - {t: SPACE, h: qwerty}
-  - {t: RIGHT GUI, h: qwerty}
+  - {t: RIGHT GUI, h: Settings}
   - {t: STOP, h: STOP}
   symbols1:
   - ESC
@@ -80,12 +80,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - RSHFT
-  - LCTRL
-  - LALT
-  - {t: SPACE, h: LEFT META, type: held}
-  - {t: SPACE, h: RIGHT META}
-  - RALT
-  - LCTRL
+  - ''
+  - {t: LEFT META, h: LEFT ALT}
+  - {t: SPACE, type: held}
+  - SPACE
+  - {t: RIGHT META, h: RIGHT ALT}
+  - ''
   symbols2:
   - ESC
   - '['
@@ -99,7 +99,7 @@ layers:
   - +
   - '='
   - {t: BACKSPACE, h: DELETE}
-  - {t: TAB, h: LCTRL}
+  - TAB
   - {t: _, h: LEFT ARROW}
   - {t: \, h: DOWN ARROW}
   - {t: '|', h: RIGHT}
@@ -124,13 +124,13 @@ layers:
   - {t: ▽, type: trans}
   - RSHFT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - SPACE
+  - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Settings:
-  - ''
+  - {type: held}
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
