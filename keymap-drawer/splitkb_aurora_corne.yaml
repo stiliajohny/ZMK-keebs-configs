@@ -39,53 +39,10 @@ layers:
   - RSHFT
   - {t: MUTE, h: PLAY PAUSE}
   - {t: LGUI, h: qwerty}
-  - {t: SPACE, h: Settings}
+  - {t: SPACE, h: symbols1}
   - {t: SPACE, h: qwerty}
   - {t: RIGHT GUI, h: qwerty}
   - {t: STOP, h: STOP}
-  Settings:
-  - ''
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BSPC
-  - BT PRV
-  - BT NXT
-  - RGB EFR
-  - RGB EFF
-  - RGB SPD
-  - RGB SPI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB TOG
-  - RGB COLOR HSB(0,100,50)
-  - RGB COLOR HSB(116,95,49)
-  - RGB COLOR HSB(239,95,47)
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
   symbols1:
   - ESC
   - '1'
@@ -125,7 +82,7 @@ layers:
   - RSHFT
   - LCTRL
   - LALT
-  - {t: SPACE, h: LEFT META}
+  - {t: SPACE, h: LEFT META, type: held}
   - {t: SPACE, h: RIGHT META}
   - RALT
   - LCTRL
@@ -172,3 +129,46 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Settings:
+  - ''
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BSPC
+  - BT PRV
+  - BT NXT
+  - RGB EFR
+  - RGB EFF
+  - RGB SPD
+  - RGB SPI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB TOG
+  - RGB COLOR HSB(0,100,50)
+  - RGB COLOR HSB(116,95,49)
+  - RGB COLOR HSB(239,95,47)
+  - RGB BRD
+  - RGB BRI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
