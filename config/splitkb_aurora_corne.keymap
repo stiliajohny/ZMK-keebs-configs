@@ -18,23 +18,31 @@
         // VSCODE MACROS
         //
         // Command Palette
-
         // Command Palette
+
         macro_cmd_palette: macro_cmd_palette {
             label = "macro_cmd_palette";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI &kp LSHFT &kp P &macro_release &kp LGUI &kp LSHFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHFT &kp P>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHFT>;
         };
 
         // Search Files
+
         macro_search_files: macro_search_files {
             label = "macro_search_files";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI &kp LSHFT &kp F &macro_release &kp LGUI &kp LSHFT>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI &kp LSHFT &kp F>,
+                <&macro_release>,
+                <&kp LGUI &kp LSHFT>;
         };
-
     };
 
     behaviors {
@@ -61,45 +69,48 @@
 
         QWERTY {
             bindings = <
-            &kp ESCAPE      &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P    &kp BACKSPACE
-            &ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SINGLE_QUOTE  &kp ENTER
-            &kp LEFT_SHIFT  &kp Z           &kp X           &kp C                    &kp V           &kp B             &kp N           &kp M            &kp COMMA          &kp DOT         &kp FSLH          &kp RSHFT
-                                                            &ht C_PLAY_PAUSE C_MUTE  &lt 0 LGUI      &lt 1 SPACE       &lt 0 SPACE     &lt 0 RIGHT_GUI  &ht C_STOP C_STOP
-                        >;
+&kp ESCAPE      &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P    &mt DELETE BACKSPACE
+&ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SINGLE_QUOTE  &kp ENTER
+&kp LEFT_SHIFT  &kp Z           &kp X           &kp C                    &kp V           &kp B             &kp N           &kp M            &kp COMMA          &kp DOT         &kp FSLH          &kp RSHFT
+                                                &ht C_PLAY_PAUSE C_MUTE  &lt 2 LGUI      &lt 1 SPACE       &lt 0 SPACE     &lt 3 RIGHT_GUI  &ht C_STOP C_STOP
+            >;
 
-            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
+            sensor-bindings =
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+
             label = "qwerty";
         };
 
         Symbols1 {
             bindings = <
-            &kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8     &kp N9     &kp N0             &kp BSPC
-            &kp TAB    &kp MINUS  &kp FSLH  &kp COLON  &kp SEMI   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp POUND  &kp SPACE  &kp SPACE  &kp DOUBLE_QUOTES  &kp RET
-            &kp LSHFT  &trans     &trans    &kp DOT    &kp COMMA  &kp QUESTION            &kp SPACE              &kp SQT    &trans     &trans     &trans             &kp RSHFT
-                                            &kp LCTRL  &kp LALT   &mt LEFT_META SPACE     &mt RIGHT_META SPACE   &kp RALT   &kp LCTRL
-                        >;
+&kp ESC    &kp N1     &kp N2    &kp N3     &kp N4                  &kp N5                  &kp N6                 &kp N7                    &kp N8     &kp N9     &kp N0             &kp BSPC
+&kp TAB    &kp MINUS  &kp FSLH  &kp COLON  &kp SEMI                &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp POUND                 &kp SPACE  &kp SPACE  &kp DOUBLE_QUOTES  &kp RET
+&kp LSHFT  &trans     &trans    &kp DOT    &kp COMMA               &kp QUESTION            &kp SPACE              &kp SQT                   &trans     &trans     &trans             &kp RSHFT
+                                &none      &mt LEFT_ALT LEFT_META  &kp SPACE               &kp SPACE              &mt RIGHT_ALT RIGHT_META  &none
+            >;
 
             label = "symbols1";
         };
 
         Symbols2 {
             bindings = <
-            &kp ESC        &kp LBKT                   &mt UP_ARROW RS(RIGHT_BRACKET)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &mt DELETE BACKSPACE
-            &mt LCTRL TAB  &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp SPACE     &kp SQT   &kp BSLH   &kp RET
-            &kp LSHFT      &kp GRAVE                  &kp SPACE                       &kp DOT         &kp COMMA        &kp QUESTION     &kp SPACE         &kp SQT    &trans        &trans    &trans     &kp RSHFT
-                                                                                    &trans          &trans           &trans           &trans            &trans     &trans
-                        >;
+&kp ESC    &kp LBKT                   &mt UP_ARROW RS(RIGHT_BRACKET)  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp POUND        &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL  &mt DELETE BACKSPACE
+&kp TAB    &mt LEFT_ARROW UNDERSCORE  &mt DOWN_ARROW BACKSLASH        &mt RIGHT PIPE  &kp TILDE        &kp LESS_THAN    &kp GREATER_THAN  &kp POUND  &kp SPACE     &kp SQT   &kp BSLH   &kp RET
+&kp LSHFT  &kp GRAVE                  &kp SPACE                       &kp DOT         &kp COMMA        &kp QUESTION     &kp SPACE         &kp SQT    &trans        &trans    &trans     &kp RSHFT
+                                                                      &trans          &trans           &kp SPACE        &kp SPACE         &trans     &trans
+            >;
 
             label = "symbols2";
         };
 
         Settings {
             bindings = <
-            &none            &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
-            &bt BT_PRV       &bt BT_NXT                       &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI    &none  &none  &none  &none  &none  &none
-            &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(116,95,49)  &rgb_ug RGB_COLOR_HSB(239,95,47)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none
-                                                                                                &none                             &none            &none              &none  &none  &none
-                        >;
+&none            &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
+&bt BT_PRV       &bt BT_NXT                       &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI    &none  &none  &none  &none  &none  &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(116,95,49)  &rgb_ug RGB_COLOR_HSB(239,95,47)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none
+                                                                                    &none                             &none            &none              &none  &none  &none
+            >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
