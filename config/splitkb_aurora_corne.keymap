@@ -71,17 +71,6 @@
             label = "qwerty";
         };
 
-        Settings {
-            bindings = <
-            &none            &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
-            &bt BT_PRV       &bt BT_NXT                       &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI    &none  &none  &none  &none  &none  &none
-            &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(116,95,49)  &rgb_ug RGB_COLOR_HSB(239,95,47)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none
-                                                                                                &none                             &none            &none              &none  &none  &none
-                        >;
-
-            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
-        };
-
         Symbols1 {
             bindings = <
             &kp ESC    &kp N1     &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6                 &kp N7     &kp N8     &kp N9     &kp N0             &kp BSPC
@@ -102,6 +91,17 @@
                         >;
 
             label = "symbols2";
+        };
+
+        Settings {
+            bindings = <
+            &none            &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
+            &bt BT_PRV       &bt BT_NXT                       &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI    &none  &none  &none  &none  &none  &none
+            &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(116,95,49)  &rgb_ug RGB_COLOR_HSB(239,95,47)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none
+                                                                                                &none                             &none            &none              &none  &none  &none
+                        >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
     };
 };
