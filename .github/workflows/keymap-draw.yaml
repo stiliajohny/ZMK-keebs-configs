@@ -8,6 +8,7 @@ on:
       - "keymap_drawer.config.yaml"
       # - 'config/boards/*/*/*.keymap'
       - ".github/workflows/*.yml"
+      - ".github/workflows/*.conf"
 
 jobs:
   build:
