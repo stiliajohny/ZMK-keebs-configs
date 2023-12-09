@@ -25,7 +25,7 @@ layers:
   - L
   - ''''
   - ENTER
-  - '&LEFT_SHIFT'
+  - LEFT SHIFT
   - Z
   - X
   - C
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Settings:
-  - {type: held}
+  - {t: EP TOG, type: held}
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -142,24 +142,24 @@ layers:
   - ''
   - ''
   - BSPC
-  - BT PRV
-  - BT NXT
-  - RGB EFR
-  - RGB EFF
-  - RGB SPD
-  - RGB SPI
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
-  - RGB TOG
-  - RGB COLOR HSB(0,100,50)
-  - RGB COLOR HSB(116,95,49)
-  - RGB COLOR HSB(239,95,47)
-  - RGB BRD
-  - RGB BRI
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
