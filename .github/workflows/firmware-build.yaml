@@ -1,0 +1,12 @@
+name: ZMK firmware build
+on:
+  workflow_dispatch: # can be triggered manually
+  push: # automatically run on changes to following paths
+    paths:
+      - "config/**"
+      - "build.yaml"
+
+jobs:
+  build:
+    name: Build firmware
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
