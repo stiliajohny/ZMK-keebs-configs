@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
-  qwerty:
+  QWERTY:
   - {t: ESCAPE, h: Settings}
   - {t: Q, h: '1'}
   - {t: W, h: '2'}
@@ -38,12 +38,12 @@ layers:
   - /
   - RSHFT
   - {t: MUTE, h: PLAY PAUSE}
-  - {t: LGUI, h: symbols2}
-  - {t: SPACE, h: symbols1}
-  - {t: SPACE, h: qwerty}
+  - {t: LGUI, h: Symbols2}
+  - {t: SPACE, h: Symbols1}
+  - {t: SPACE, h: QWERTY}
   - {t: RIGHT GUI, h: Settings}
   - {t: STOP, h: STOP}
-  symbols1:
+  Symbols1:
   - ESC
   - '1'
   - '2'
@@ -86,7 +86,7 @@ layers:
   - SPACE
   - {t: RIGHT META, h: RIGHT ALT}
   - ''
-  symbols2:
+  Symbols2:
   - ESC
   - '['
   - {t: RS(RIGHT BRACKET), h: UP ARROW}

@@ -100,8 +100,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g transform="translate(30, 0)" class="layer-qwerty">
-<text x="0" y="28" class="label">qwerty:</text>
+<g transform="translate(30, 0)" class="layer-QWERTY">
+<text x="0" y="28" class="label">QWERTY:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -270,17 +270,17 @@ path.combo {
 <g transform="translate(286, 213) rotate(15.0)" class="key keypos-37">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LGUI</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">symbols2</tspan></text>
+<text x="0" y="24" class="key hold"><tspan style="font-size: 88%">Symbols2</tspan></text>
 </g>
 <g transform="translate(351, 224) rotate(30.0)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
-<text x="0" y="38" class="key hold"><tspan style="font-size: 88%">symbols1</tspan></text>
+<text x="0" y="38" class="key hold"><tspan style="font-size: 88%">Symbols1</tspan></text>
 </g>
 <g transform="translate(489, 224) rotate(-30.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
-<text x="0" y="38" class="key hold">qwerty</text>
+<text x="0" y="38" class="key hold">QWERTY</text>
 </g>
 <g transform="translate(554, 213) rotate(-15.0)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -296,8 +296,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 331)" class="layer-symbols1">
-<text x="0" y="28" class="label">symbols1:</text>
+<g transform="translate(30, 331)" class="layer-Symbols1">
+<text x="0" y="28" class="label">Symbols1:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -473,8 +473,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 661)" class="layer-symbols2">
-<text x="0" y="28" class="label">symbols2:</text>
+<g transform="translate(30, 661)" class="layer-Symbols2">
+<text x="0" y="28" class="label">Symbols2:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
