@@ -1,0 +1,104 @@
+layout: {qmk_keyboard: splitkb/kyria/rev1}
+layers:
+  default:
+  - RGB TOG
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: BACKSPACE, h: DELETE}
+  - TAB
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - KP ENTER
+  - LSHFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: LEFT ARROW, h: function}
+  - UP ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RIGHT SHIFT
+  - LEFT CONTROL
+  - LEFT ALT
+  - LMETA
+  - SPACE
+  - SPACE
+  - SPACE
+  - SPACE
+  - RMETA
+  - RIGHT ALT
+  - RIGHT CONTROL
+  function:
+  - RGB TOG
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB SPI
+  - RGB BRI
+  - RGB HUI
+  - RGB HUD
+  - RGB BRI
+  - RGB BRD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB EFF
+  - RGB EFR
+  - RGB SAI
+  - RGB SAD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB COLOR HSB(0,100,50)
+  - RGB COLOR HSB(136,91,49)
+  - RGB COLOR HSB(232,90,50)
+  - RGB COLOR HSB(315,92,49)
+  - RGB COLOR HSB(64,100,50)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
