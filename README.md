@@ -1,6 +1,7 @@
-# zmk config-aurora-corne-1.0-nice-nano
+# ZMK Keeps conig
 
 This is my [ZMK](https://zmk.dev) configuration for my [Aurora Corne](https://splitkb.com/products/aurora-corne)
+This is my [ZMK](https://zmk.dev) configuration for my [SplitKB Kyria](https://splitkb.com/collections/keyboard-kits/products/kyria-rev2-pcb-kit)
 
 ## Flashing
 
