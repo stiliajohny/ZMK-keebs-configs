@@ -1,7 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/keys.h>
 
 // layers
 // keys
@@ -56,12 +56,6 @@
             bindings = <&kp>, <&kp>;
         };
 
-        rgb_encoder: rgb_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RGB_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-        };
     };
 
     keymap {
@@ -106,10 +100,10 @@
 
         Settings {
             bindings = <
-&none            &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
-&bt BT_PRV       &bt BT_NXT                       &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI    &none  &none  &none  &none  &none  &none
-&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(116,95,49)  &rgb_ug RGB_COLOR_HSB(239,95,47)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none
-                                                                                    &none                             &none            &none              &none  &none  &none
+&ext_power EP_TOG  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &none  &none  &none  &none  &none  &kp BSPC
+&none              &none       &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+&none              &none       &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
+                                             &none         &none         &none           &none  &none  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
