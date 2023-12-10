@@ -1,8 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
 
 // layers
 // keys
@@ -80,7 +79,7 @@
                 <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
 
-            label = "qwerty";
+            label = "QWERTY";
         };
 
         Symbols1 {
@@ -91,7 +90,7 @@
                                 &none      &mt LEFT_ALT LEFT_META  &kp SPACE               &kp SPACE              &mt RIGHT_ALT RIGHT_META  &none
             >;
 
-            label = "symbols1";
+            label = "SYM 1";
         };
 
         Symbols2 {
@@ -102,7 +101,7 @@
                                                                       &trans          &trans           &kp SPACE        &kp SPACE         &trans     &trans
             >;
 
-            label = "symbols2";
+            label = "SYM 2";
         };
 
         Settings {
@@ -112,6 +111,7 @@
 &none              &none       &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
                                              &none         &none         &none           &none  &none  &none
             >;
+            label = "Settings";
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
