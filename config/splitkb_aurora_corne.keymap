@@ -4,9 +4,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 // layers
-
-
-
 // keys
 
 #define HYPER LS(LC(LA(LGUI)))
@@ -82,7 +79,7 @@
                 <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
 
-            label = "QWERTY";
+            label = "qwerty";
         };
 
         Symbols1 {
@@ -93,7 +90,7 @@
                                 &none      &mt LEFT_ALT LEFT_META  &kp SPACE               &kp SPACE              &mt RIGHT_ALT RIGHT_META  &none
             >;
 
-            label = "SYM 1";
+            label = "symbols1";
         };
 
         Symbols2 {
@@ -104,17 +101,16 @@
                                                                       &trans          &trans           &kp SPACE        &kp SPACE         &trans     &trans
             >;
 
-            label = "SYM 2";
+            label = "symbols2";
         };
 
         Settings {
             bindings = <
-&ext_power EP_TOG  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &none  &none  &none  &none  &none  &kp BSPC
-&none              &none       &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&none              &none       &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-                                             &none         &none         &none           &none  &none  &none
+&none            &bt BT_CLR                       &bt BT_SEL 0                      &bt BT_SEL 1                      &bt BT_SEL 2     &bt BT_SEL 3       &none  &none  &none  &none  &none  &kp BSPC
+&bt BT_PRV       &bt BT_NXT                       &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                   &rgb_ug RGB_SPD  &rgb_ug RGB_SPI    &none  &none  &none  &none  &none  &none
+&rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(116,95,49)  &rgb_ug RGB_COLOR_HSB(239,95,47)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none
+                                                                                    &none                             &none            &none              &none  &none  &none
             >;
-            label = "Settings";
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
