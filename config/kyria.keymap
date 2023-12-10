@@ -1,0 +1,36 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+&rgb_ug RGB_TOG  &kp Q  &kp W  &kp E             &kp R         &kp T                                                                       &kp Y      &kp U          &kp I              &kp O    &kp P     &mt DELETE BACKSPACE
+&kp TAB          &kp A  &kp S  &kp D             &kp F         &kp G                                                                       &kp H      &kp J          &kp K              &kp L    &kp SEMI  &kp KP_ENTER
+&kp LSHFT        &kp Z  &kp X  &kp C             &kp V         &kp B      &lt 1 LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
+                               &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LMETA  &kp SPACE         &kp SPACE     &kp SPACE       &kp SPACE        &kp RMETA  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        function_layer {
+            bindings = <
+&rgb_ug RGB_TOG  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2                     &bt BT_SEL 3                      &bt BT_SEL 4                                                                                                          &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD                  &rgb_ug RGB_BRI                   &rgb_ug RGB_BRD                                                                                                       &trans  &trans  &trans  &trans  &trans  &trans
+&rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD                  &trans                            &trans                            &trans                            &trans                            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                                   &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(136,91,49)  &rgb_ug RGB_COLOR_HSB(232,90,50)  &rgb_ug RGB_COLOR_HSB(315,92,49)  &rgb_ug RGB_COLOR_HSB(64,100,50)  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+    };
+};
