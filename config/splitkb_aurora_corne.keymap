@@ -55,7 +55,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
     };
 
     keymap {
@@ -73,7 +72,7 @@
                 <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
                 <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
 
-            label = "qwerty";
+            label = "QWERTY";
         };
 
         Symbols1 {
@@ -84,7 +83,7 @@
                                 &none      &mt LEFT_ALT LEFT_META  &kp SPACE               &kp SPACE              &mt RIGHT_ALT RIGHT_META  &none
             >;
 
-            label = "symbols1";
+            label = "Sym 1";
         };
 
         Symbols2 {
@@ -95,7 +94,7 @@
                                                                       &trans          &trans           &kp SPACE        &kp SPACE         &trans     &trans
             >;
 
-            label = "symbols2";
+            label = "Sym 2";
         };
 
         Settings {
@@ -107,6 +106,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+            label = "Settings ";
         };
     };
 };
