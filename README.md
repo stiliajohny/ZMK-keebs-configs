@@ -4,7 +4,10 @@ This is my [ZMK](https://zmk.dev) configuration for my
 - [Aurora Corne](https://splitkb.com/products/aurora-corne)
 - [SplitKB Kyria](https://splitkb.com/collections/keyboard-kits/products/kyria-rev2-pcb-kit)
 
+## Training Sites
 
+- https://www.keybr.com/
+- https://monkeytype.com/
 
 ## Flashing
 
@@ -21,7 +24,20 @@ This is my [ZMK](https://zmk.dev) configuration for my
 
 ### Aurora Corne
 
+<details>
+<summary>here</summary>
+
 ![Keymap](./keymap-drawer/splitkb_aurora_corne.svg)
 
+
+</details>
+
 ### Kyria
+
+
+<details>
+<summary>here</summary>
+
 ![Keymap](./keymap-drawer/kyria.svg)
+
+</details>
