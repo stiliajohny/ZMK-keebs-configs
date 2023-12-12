@@ -189,11 +189,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&Thumbs_up'
-  - {t: ▽, type: trans}
+  - '&Thumbs_Down'
   - '&Crossed_Fingers'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&Party_Popper'
+  - '&Birthday_Cake'
+  - '&Party_Face'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
