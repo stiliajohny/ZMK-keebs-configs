@@ -218,7 +218,7 @@
             bindings = <
 &trans  &trans  &none   &Red_Heart  &Heart_Eyes   &Broken_Heart       &Face_with_Tears_of_Joy  &Smiling_Face   &ROFL        &trans  &trans  &trans
 &trans  &trans  &trans  &Thumbs_up  &Thumbs_Down  &Crossed_Fingers    &Party_Popper            &Birthday_Cake  &Party_Face  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans        &trans              &trans                   &trans          &trans       &trans  &trans  &trans
+&trans  &trans  &trans  &Star       &Fire         &Rainbow            &trans                   &trans          &trans       &trans  &trans  &trans
                         &trans      &trans        &trans              &trans                   &trans          &trans
             >;
 
