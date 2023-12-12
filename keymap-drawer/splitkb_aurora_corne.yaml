@@ -203,9 +203,9 @@ layers:
   - '&Star'
   - '&Fire'
   - '&Rainbow'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&Crying_face'
+  - '&Angry_Face'
+  - '&Thinking_Face'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
