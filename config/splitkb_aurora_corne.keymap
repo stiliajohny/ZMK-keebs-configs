@@ -106,6 +106,20 @@
             bindings = <&kp COLON &kp C &kp R &kp O &kp S &kp S &kp E &kp D &kp UNDER &kp F &kp I &kp N &kp G &kp E &kp R &kp S &kp COLON>;
             label = "CROSSED_FINGERS";
         };
+
+        Party_Popper: Party_Popper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp T &kp A &kp D &kp A &kp COLON>;
+            label = "PARTY_POPPER";
+        };
+
+        Birthday_Cake: Birthday_Cake {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp B &kp I &kp R &kp T &kp H &kp D &kp A &kp Y &kp COLON>;
+            label = "BIRTHDAY_CAKE";
+        };
     };
 
     behaviors {
