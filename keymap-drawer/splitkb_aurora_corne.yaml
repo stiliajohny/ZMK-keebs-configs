@@ -179,18 +179,18 @@ layers:
   - '&Red_Heart'
   - '&Heart_Eyes'
   - '&Broken_Heart'
+  - '&Face_with_Tears_of_Joy'
+  - '&Smiling_Face'
+  - '&ROFL'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&Thumbs_up'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&Crossed_Fingers'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
