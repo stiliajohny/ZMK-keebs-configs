@@ -43,6 +43,20 @@
                 <&macro_release>,
                 <&kp LGUI &kp LSHFT>;
         };
+
+        Red_Heart: Red_Heart {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp N3>;
+            label = "RED_HEART";
+        };
+
+        Heart_Eyes: Heart_Eyes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp H &kp E &kp A &kp R &kp T &kp UNDER &kp E &kp Y &kp E &kp S &kp COLON>;
+            label = "HEART_EYES";
+        };
     };
 
     behaviors {
