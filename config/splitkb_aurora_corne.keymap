@@ -122,6 +122,17 @@
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
             label = "Settings ";
         };
+
+        Emoji {
+            bindings = <
+&trans  &trans  &Red_Heart  &Heart_Eyes  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans      &trans       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans       &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "Emoji";
+        };
     };
 };
 
