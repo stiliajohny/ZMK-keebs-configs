@@ -127,6 +127,27 @@
             bindings = <&kp COLON &kp P &kp A &kp R &kp T &kp Y &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON>;
             label = "PARTY_FACE";
         };
+
+        Star: Star {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp S &kp T &kp A &kp R &kp COLON>;
+            label = "STAR";
+        };
+
+        Fire: Fire {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp F &kp I &kp R &kp E &kp COLON>;
+            label = "FIRE";
+        };
+
+        Rainbow: Rainbow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp R &kp A &kp I &kp N &kp B &kp O &kp W &kp COLON>;
+            label = "RAINBOW";
+        };
     };
 
     behaviors {
