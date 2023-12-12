@@ -148,6 +148,27 @@
             bindings = <&kp COLON &kp R &kp A &kp I &kp N &kp B &kp O &kp W &kp COLON>;
             label = "RAINBOW";
         };
+
+        Crying_face: Crying_face {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp C &kp R &kp Y &kp COLON>;
+            label = "CRYING_FACE";
+        };
+
+        Angry_Face: Angry_Face {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp R &kp A &kp G &kp E &kp COLON>;
+            label = "ANGRY_FACE";
+        };
+
+        Thinking_Face: Thinking_Face {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp T &kp H &kp I &kp N &kp K &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON>;
+            label = "THINKING_FACE";
+        };
     };
 
     behaviors {
