@@ -40,7 +40,7 @@ layers:
   - {t: MUTE, h: PLAY PAUSE}
   - {t: LGUI, h: Symbols2}
   - {t: SPACE, h: Symbols1}
-  - {t: SPACE, h: QWERTY}
+  - {t: SPACE, h: Emoji}
   - {t: RIGHT GUI, h: Settings}
   - {t: STOP, h: STOP}
   Symbols1:
@@ -212,6 +212,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
