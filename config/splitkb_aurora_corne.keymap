@@ -57,6 +57,55 @@
             bindings = <&kp COLON &kp H &kp E &kp A &kp R &kp T &kp UNDER &kp E &kp Y &kp E &kp S &kp COLON>;
             label = "HEART_EYES";
         };
+
+        Broken_Heart: Broken_Heart {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp FSLH &kp N3>;
+            label = "BROKEN_HEART";
+        };
+
+        Face_with_Tears_of_Joy: Face_with_Tears_of_Joy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp J &kp O &kp Y &kp COLON>;
+            label = "FACE_WITH_TEARS_OF_JOY";
+        };
+
+        Smiling_Face: Smiling_Face {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp RPAR>;
+            label = "SMILING_FACE";
+        };
+
+        ROFL: ROFL {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp R &kp O &kp L &kp L &kp I &kp N &kp G &kp UNDER &kp O &kp N &kp UNDER &kp T &kp H &kp E &kp UNDER &kp F &kp L &kp O &kp O &kp R &kp UNDER &kp L &kp A &kp U &kp G &kp H &kp I &kp N &kp G &kp COLON>;
+            label = "ROFL";
+        };
+
+        Thumbs_up: Thumbs_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp PLUS &kp N1 &kp COLON>;
+            label = "THUMBS_UP";
+        };
+
+        Thumbs_Down: Thumbs_Down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp MINUS &kp N1 &kp COLON>;
+            label = "THUMBS_DOWN";
+        };
+
+        Crossed_Fingers: Crossed_Fingers {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp C &kp R &kp O &kp S &kp S &kp E &kp D &kp UNDER &kp F &kp I &kp N &kp G &kp E &kp R &kp S &kp COLON>;
+            label = "CROSSED_FINGERS";
+        };
     };
 
     behaviors {
@@ -125,10 +174,10 @@
 
         Emoji {
             bindings = <
-&trans  &trans  &Red_Heart  &Heart_Eyes  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &trans       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans      &trans       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans       &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &none   &Red_Heart  &Heart_Eyes  &Broken_Heart    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans       &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans       &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans      &trans       &trans           &trans  &trans  &trans
             >;
 
             label = "Emoji";
