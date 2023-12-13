@@ -317,6 +317,15 @@
 
             label = "VSCode";
         };
+
+        layer_6 {
+            bindings = <
+&trans  &trans          &kp UP_ARROW  &trans     &trans  &trans    &trans  &trans  &trans     &ht LEFT_BRACKET MINUS  &ht RIGHT_BRACKET EQUAL  &kp BSPC
+&trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans    &trans  &trans  &trans     &kp SEMI                &kp SEMI                 &kp BSLH
+&trans  &trans          &trans        &trans     &trans  &trans    &trans  &trans  &kp COMMA  &kp DOT                 &kp FSLH                 &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };
 
