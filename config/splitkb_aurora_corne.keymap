@@ -19,154 +19,131 @@
         //
         // Command Palette
         // Command Palette
-
-        macro_cmd_palette: macro_cmd_palette {
-            label = "macro_cmd_palette";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI &kp LSHFT &kp P>,
-                <&macro_release>,
-                <&kp LGUI &kp LSHFT>;
-        };
-
         // Search Files
-
-        macro_search_files: macro_search_files {
-            label = "macro_search_files";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI &kp LSHFT &kp F>,
-                <&macro_release>,
-                <&kp LGUI &kp LSHFT>;
-        };
 
         Red_Heart: Red_Heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp N3>;
+            bindings = <&kp LT &kp N3 &kp SPACE>;
             label = "RED_HEART";
         };
 
         Heart_Eyes: Heart_Eyes {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp H &kp E &kp A &kp R &kp T &kp UNDER &kp E &kp Y &kp E &kp S &kp COLON>;
+            bindings = <&kp COLON &kp H &kp E &kp A &kp R &kp T &kp UNDER &kp E &kp Y &kp E &kp S &kp COLON &kp SPACE>;
             label = "HEART_EYES";
         };
 
         Broken_Heart: Broken_Heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LT &kp FSLH &kp N3>;
+            bindings = <&kp LT &kp FSLH &kp N3 &kp SPACE>;
             label = "BROKEN_HEART";
         };
 
         Face_with_Tears_of_Joy: Face_with_Tears_of_Joy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp J &kp O &kp Y &kp COLON>;
+            bindings = <&kp COLON &kp J &kp O &kp Y &kp COLON &kp SPACE>;
             label = "FACE_WITH_TEARS_OF_JOY";
         };
 
         Smiling_Face: Smiling_Face {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp RPAR>;
+            bindings = <&kp COLON &kp RPAR &kp SPACE>;
             label = "SMILING_FACE";
         };
 
         ROFL: ROFL {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp R &kp O &kp L &kp L &kp I &kp N &kp G &kp UNDER &kp O &kp N &kp UNDER &kp T &kp H &kp E &kp UNDER &kp F &kp L &kp O &kp O &kp R &kp UNDER &kp L &kp A &kp U &kp G &kp H &kp I &kp N &kp G &kp COLON>;
+            bindings = <&kp COLON &kp R &kp O &kp L &kp L &kp I &kp N &kp G &kp UNDER &kp O &kp N &kp UNDER &kp T &kp H &kp E &kp UNDER &kp F &kp L &kp O &kp O &kp R &kp UNDER &kp L &kp A &kp U &kp G &kp H &kp I &kp N &kp G &kp COLON &kp SPACE>;
             label = "ROFL";
         };
 
         Thumbs_up: Thumbs_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp PLUS &kp N1 &kp COLON>;
+            bindings = <&kp COLON &kp PLUS &kp N1 &kp COLON &kp SPACE>;
             label = "THUMBS_UP";
         };
 
         Thumbs_Down: Thumbs_Down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp MINUS &kp N1 &kp COLON>;
+            bindings = <&kp COLON &kp MINUS &kp N1 &kp COLON &kp SPACE>;
             label = "THUMBS_DOWN";
         };
 
         Crossed_Fingers: Crossed_Fingers {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp C &kp R &kp O &kp S &kp S &kp E &kp D &kp UNDER &kp F &kp I &kp N &kp G &kp E &kp R &kp S &kp COLON>;
+            bindings = <&kp COLON &kp C &kp R &kp O &kp S &kp S &kp E &kp D &kp UNDER &kp F &kp I &kp N &kp G &kp E &kp R &kp S &kp COLON &kp SPACE>;
             label = "CROSSED_FINGERS";
         };
 
         Party_Popper: Party_Popper {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp T &kp A &kp D &kp A &kp COLON>;
+            bindings = <&kp COLON &kp T &kp A &kp D &kp A &kp COLON &kp SPACE>;
             label = "PARTY_POPPER";
         };
 
         Birthday_Cake: Birthday_Cake {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp B &kp I &kp R &kp T &kp H &kp D &kp A &kp Y &kp COLON>;
+            bindings = <&kp COLON &kp B &kp I &kp R &kp T &kp H &kp D &kp A &kp Y &kp COLON &kp SPACE>;
             label = "BIRTHDAY_CAKE";
         };
 
         Party_Face: Party_Face {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp P &kp A &kp R &kp T &kp Y &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON>;
+            bindings = <&kp COLON &kp P &kp A &kp R &kp T &kp Y &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON &kp SPACE>;
             label = "PARTY_FACE";
         };
 
         Star: Star {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp S &kp T &kp A &kp R &kp COLON>;
+            bindings = <&kp COLON &kp S &kp T &kp A &kp R &kp COLON &kp SPACE>;
             label = "STAR";
         };
 
         Fire: Fire {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp F &kp I &kp R &kp E &kp COLON>;
+            bindings = <&kp COLON &kp F &kp I &kp R &kp E &kp COLON &kp SPACE>;
             label = "FIRE";
         };
 
         Rainbow: Rainbow {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp R &kp A &kp I &kp N &kp B &kp O &kp W &kp COLON>;
+            bindings = <&kp COLON &kp R &kp A &kp I &kp N &kp B &kp O &kp W &kp COLON &kp SPACE>;
             label = "RAINBOW";
         };
 
         Crying_face: Crying_face {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp C &kp R &kp Y &kp COLON>;
+            bindings = <&kp COLON &kp C &kp R &kp Y &kp COLON &kp SPACE>;
             label = "CRYING_FACE";
         };
 
         Angry_Face: Angry_Face {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp R &kp A &kp G &kp E &kp COLON>;
+            bindings = <&kp COLON &kp R &kp A &kp G &kp E &kp COLON &kp SPACE>;
             label = "ANGRY_FACE";
         };
 
         Thinking_Face: Thinking_Face {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp COLON &kp T &kp H &kp I &kp N &kp K &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON>;
+            bindings = <&kp COLON &kp T &kp H &kp I &kp N &kp K &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON &kp SPACE>;
             label = "THINKING_FACE";
         };
     };
@@ -244,6 +221,17 @@
             >;
 
             label = "Emoji";
+        };
+
+        VSCode {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "VSCode";
         };
     };
 };
