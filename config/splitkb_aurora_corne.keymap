@@ -146,6 +146,41 @@
             bindings = <&kp COLON &kp T &kp H &kp I &kp N &kp K &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON &kp SPACE>;
             label = "THINKING_FACE";
         };
+
+        Open_File: Open_File {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp O>;
+            label = "OPEN_FILE";
+        };
+
+        Save: Save {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp S>;
+            label = "SAVE";
+        };
+
+        Close: Close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp W>;
+            label = "CLOSE";
+        };
+
+        Toggle_Terminal: Toggle_Terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp GRAVE>;
+            label = "TOGGLE_TERMINAL";
+        };
+
+        Find: Find {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp F>;
+            label = "FIND";
+        };
     };
 
     behaviors {
