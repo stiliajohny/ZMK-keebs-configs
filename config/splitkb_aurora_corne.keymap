@@ -150,21 +150,21 @@
         Open_File: Open_File {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp O>;
+            bindings = <&kp LEFT_META &kp O>;
             label = "OPEN_FILE";
         };
 
         Save: Save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp S>;
+            bindings = <&kp LEFT_META &kp S>;
             label = "SAVE";
         };
 
         Close: Close {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp W>;
+            bindings = <&kp LEFT_META &kp W>;
             label = "CLOSE";
         };
 
@@ -178,8 +178,57 @@
         Find: Find {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp F>;
+            bindings = <&kp LEFT_META &kp F>;
             label = "FIND";
+        };
+
+        Toggle_Comment: Toggle_Comment {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_META &kp FSLH>;
+            label = "TOGGLE_COMMENT";
+        };
+
+        Format_Document: Format_Document {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp F>;
+            label = "FORMAT_DOCUMENT";
+        };
+
+        Quick_Fix: Quick_Fix {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_META &kp DOT>;
+            label = "QUICK_FIX";
+        };
+
+        New_File: New_File {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_META &kp N>;
+            label = "NEW_FILE";
+        };
+
+        Open_Settings: Open_Settings {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_META &kp PERIOD>;
+            label = "OPEN_SETTINGS";
+        };
+
+        Undo: Undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_META &kp Z>;
+            label = "UNDO";
+        };
+
+        Redo: Redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_META &kp LEFT_SHIFT &kp Z>;
+            label = "REDO";
         };
     };
 
