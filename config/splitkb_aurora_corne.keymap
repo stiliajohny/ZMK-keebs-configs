@@ -256,6 +256,13 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        rotary_desktop_move: rotary_desktop_move {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROTARY_DESKTOP_MOVE";
+            #sensor-binding-cells = <0>;
+            bindings = <&next_desktop>, <&previous_desktop>;
+        };
     };
 
     keymap {
