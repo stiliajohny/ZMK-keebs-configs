@@ -263,6 +263,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&next_desktop>, <&previous_desktop>;
         };
+
+        sensor_rotate_var: sensor_rotate_var {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "SENSOR_ROTATE_VAR";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
