@@ -230,6 +230,20 @@
             bindings = <&kp LEFT_META &kp LEFT_SHIFT &kp Z>;
             label = "REDO";
         };
+
+        next_desktop: next_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp RIGHT>;
+            label = "NEXT_DESKTOP";
+        };
+
+        previous_desktop: previous_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT>;
+            label = "PREVIOUS_DESKTOP";
+        };
     };
 
     behaviors {
@@ -271,6 +285,9 @@
             >;
 
             label = "Sym/Nav";
+            sensor-bindings =
+                <&inc_dec_kp PAGE_UP PAGE_DOWN>,
+                <&inc_dec_kp LC(RIGHT_ARROW) LC(LEFT_ARROW)>;
         };
 
         Settings {
