@@ -38,99 +38,56 @@ layers:
   - /
   - RSHFT
   - {t: MUTE, h: PLAY PAUSE}
-  - {t: LGUI, h: Symbols2}
-  - {t: SPACE, h: Symbols1}
+  - {t: LGUI, h: VSCode}
+  - {t: SPACE, h: sym-nav}
   - {t: SPACE, h: Emoji}
   - {t: RIGHT GUI, h: Settings}
   - {t: STOP, h: STOP}
-  Symbols1:
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
+  sym-nav:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '-', h: '['}
+  - {t: '=', h: ']'}
   - BSPC
-  - TAB
-  - '-'
-  - /
-  - ':'
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN
+  - RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ;
-  - (
-  - )
-  - '#'
-  - SPACE
-  - SPACE
-  - '"'
-  - RET
-  - LSHFT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - .
-  - ','
-  - '?'
-  - SPACE
-  - ''''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RSHFT
-  - ''
-  - {t: LEFT META, h: LEFT ALT}
-  - {t: SPACE, type: held}
-  - SPACE
-  - {t: RIGHT META, h: RIGHT ALT}
-  - ''
-  Symbols2:
-  - ESC
-  - '['
-  - {t: RS(RIGHT BRACKET), h: UP ARROW}
-  - '{'
-  - '}'
-  - '#'
-  - '%'
-  - ^
-  - '*'
-  - +
-  - '='
-  - {t: BACKSPACE, h: DELETE}
-  - TAB
-  - {t: _, h: LEFT ARROW}
-  - {t: \, h: DOWN ARROW}
-  - {t: '|', h: RIGHT}
-  - '~'
-  - <
-  - '>'
-  - '#'
-  - SPACE
-  - ''''
+  - ;
   - \
-  - RET
-  - LSHFT
-  - '`'
-  - SPACE
-  - .
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ','
-  - '?'
-  - SPACE
-  - ''''
+  - .
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - RSHFT
   - {t: ▽, type: trans}
   - {type: held}
-  - SPACE
-  - SPACE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Settings:
-  - {t: EP TOG, type: held}
+  - {type: held}
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -147,7 +104,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - EP TOG
   - ''
   - ''
   - ''
@@ -253,50 +210,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '6':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UP ARROW
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '-', h: '['}
-  - {t: '=', h: ']'}
-  - BSPC
-  - {t: ▽, type: trans}
-  - LEFT ARROW
-  - DOWN
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ;
-  - ;
-  - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ','
-  - .
-  - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
