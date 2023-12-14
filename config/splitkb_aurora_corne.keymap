@@ -249,9 +249,9 @@
 
         QWERTY {
             bindings = <
-&lt 2 ESCAPE    &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P    &mt DELETE BACKSPACE
-&ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SINGLE_QUOTE  &kp ENTER
-&kp LEFT_SHIFT  &kp Z           &kp X           &kp C                    &kp V           &kp B             &kp N           &kp M            &kp COMMA          &kp DOT         &kp FSLH          &kp RSHFT
+&lt 2 ESCAPE    &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P  &mt DELETE BACKSPACE
+&ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SEMICOLON   &kp ENTER
+&kp LEFT_SHIFT  &kp Z           &kp X           &kp C                    &kp V           &kp B             &kp N           &kp M            &kp COMMA          &kp DOT         &kp FSLH        &kp RSHFT
                                                 &ht C_PLAY_PAUSE C_MUTE  &lt 4 LGUI      &lt 1 SPACE       &lt 3 SPACE     &lt 2 RIGHT_GUI  &ht C_STOP C_STOP
             >;
 
@@ -265,7 +265,7 @@
         sym-nav {
             bindings = <
 &trans  &trans          &kp UP_ARROW  &trans     &trans  &trans    &trans  &trans  &trans     &ht LEFT_BRACKET MINUS  &ht RIGHT_BRACKET EQUAL  &kp BSPC
-&trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans    &trans  &trans  &trans     &kp SEMI                &kp SEMI                 &kp BSLH
+&trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans    &trans  &trans  &trans     &kp SEMI                &kp SQT                  &kp BACKSLASH
 &trans  &trans          &trans        &trans     &trans  &trans    &trans  &trans  &kp COMMA  &kp DOT                 &kp FSLH                 &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
             >;
