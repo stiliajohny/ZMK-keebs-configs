@@ -14,7 +14,6 @@
     };
 
     macros {
-
         Red_Heart: Red_Heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -141,8 +140,6 @@
             label = "THINKING_FACE";
         };
 
-
-
         next_desktop: next_desktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -240,10 +237,10 @@
 
         VSCode {
             bindings = <
-&trans  &Close  &trans  &trans  &Redo   &Toggle_Terminal    &trans  &trans  &trans          &trans      &Open_File       &trans
-&trans  &trans  &Save   &trans  &Find   &trans              &trans  &trans  &trans          &trans      &trans           &trans
-&trans  &Undo   &trans  &trans  &trans  &trans              &trans  &trans  &Open_Settings  &Quick_Fix  &Toggle_Comment  &trans
-                        &trans  &trans  &trans              &trans  &trans  &trans
+&trans  &kp LG(Q)  &trans     &trans  &kp LS(LG(Z))        &ht LC(LS(GRAVE)) LC(GRAVE)    &trans  &trans  &trans         &trans          &kp O          &trans
+&trans  &trans     &kp LG(S)  &trans  &ht LS(LG(F)) LG(F)  &trans                         &trans  &trans  &trans         &trans          &trans         &trans
+&trans  &kp LG(Z)  &trans     &trans  &trans               &trans                         &trans  &trans  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &trans
+                              &trans  &trans               &trans                         &trans  &trans  &trans
             >;
 
             label = "VSCode";
