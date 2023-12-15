@@ -177,7 +177,7 @@ layers:
   - '&Close'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&Redo'
   - '&Toggle_Terminal'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -198,15 +198,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&Undo'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&Open_Settings'
+  - '&Quick_Fix'
   - '&Toggle_Comment'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
