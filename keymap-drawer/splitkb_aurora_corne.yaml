@@ -174,40 +174,40 @@ layers:
   - {t: ▽, type: trans}
   VSCode:
   - {t: ▽, type: trans}
-  - '&Close'
+  - LG(Q)
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&Redo'
-  - '&Toggle_Terminal'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&Open_File'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&Save'
-  - {t: ▽, type: trans}
-  - '&Find'
+  - LS(LG(Z))
+  - {t: LC(GRAVE), h: LC(LS(GRAVE))}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - O
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LG(S)
   - {t: ▽, type: trans}
-  - '&Undo'
+  - {t: LG(F), h: LS(LG(F))}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&Open_Settings'
-  - '&Quick_Fix'
-  - '&Toggle_Comment'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LG(Z)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LG(COMMA)
+  - LG(PERIOD)
+  - LG(SLASH)
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
