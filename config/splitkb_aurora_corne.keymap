@@ -14,12 +14,6 @@
     };
 
     macros {
-        //
-        // VSCODE MACROS
-        //
-        // Command Palette
-        // Command Palette
-        // Search Files
 
         Red_Heart: Red_Heart {
             compatible = "zmk,behavior-macro";
@@ -150,14 +144,22 @@
         Open_File: Open_File {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_META &kp O>;
+            bindings
+                = <&macro_press &kp LEFT_META>
+                , <&macro_tap &kp O>
+                , <&macro_release &kp LEFT_META>
+                ;
             label = "OPEN_FILE";
         };
 
         Save: Save {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_META &kp S>;
+            bindings
+                = <&macro_press &kp LEFT_META>
+                , <&macro_tap &kp S>
+                , <&macro_release &kp LEFT_META>
+                ;
             label = "SAVE";
         };
 
