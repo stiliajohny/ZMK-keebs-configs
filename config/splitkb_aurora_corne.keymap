@@ -328,10 +328,10 @@
 
         VSCode {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &Close  &trans  &trans  &trans  &Toggle_Terminal    &trans  &trans  &trans  &trans  &Open_File       &trans
+&trans  &trans  &Save   &trans  &Find   &trans              &trans  &trans  &trans  &trans  &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &Toggle_Comment  &trans
+                        &trans  &trans  &trans              &trans  &trans  &trans
             >;
 
             label = "VSCode";
