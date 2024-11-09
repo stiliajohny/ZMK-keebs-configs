@@ -436,20 +436,6 @@
             label = "VSCode";
         };
 
-        LeetSpeak {
-            bindings = <
-&lt 2 ESCAPE    &Q_leet  &W_leet  &E_leet                  &R_leet     &T_leet        &Y_leet      &U_leet          &I_leet            &O_leet  &P_leet        &mt DELETE BACKSPACE
-&ht LCTRL TAB   &A_leet  &S_leet  &D_leet                  &F_leet     &G_leet        &H_leet      &J_leet          &K_leet            &L_leet  &kp SEMICOLON  &kp ENTER
-&kp LEFT_SHIFT  &Z_leet  &X_leet  &C_leet                  &V_leet     &B_leet        &N_leet      &M_leet          &kp COMMA          &kp DOT  &kp FSLH       &kp RSHFT
-                                  &ht C_PLAY_PAUSE C_MUTE  &lt 4 LGUI  &lt 1 SPACE    &lt 3 SPACE  &lt 2 RIGHT_GUI  &ht C_STOP C_STOP
-            >;
-
-            sensor-bindings =
-                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
-                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
-
-            label = "LeetSpeak";
-        };
     };
 };
 
