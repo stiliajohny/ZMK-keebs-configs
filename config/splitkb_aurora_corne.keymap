@@ -122,14 +122,14 @@
         P_leet: P_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PIPE &kp O>;
+            bindings = <&kp PIPE &kp ASTERISK>;
             label = "P_LEET";
         };
 
         Q_leet: Q_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N9>;
+            bindings = <&kp LEFT_PARENTHESIS &kp COMMA &kp RIGHT_PARENTHESIS>;
             label = "Q_LEET";
         };
 
@@ -143,7 +143,7 @@
         S_leet: S_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N5>;
+            bindings = <&kp DOLLAR>;
             label = "S_LEET";
         };
 
@@ -157,7 +157,7 @@
         U_leet: U_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PIPE &kp UNDER &kp PIPE>;
+            bindings = <&kp LEFT_PARENTHESIS &kp UNDER &kp RIGHT_PARENTHESIS>;
             label = "U_LEET";
         };
 
@@ -185,7 +185,7 @@
         Y_leet: Y_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp Y>;
+            bindings = <&kp RS(SINGLE_QUOTE) &kp SLASH>;
             label = "Y_LEET";
         };
 
