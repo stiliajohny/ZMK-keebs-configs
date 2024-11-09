@@ -47,48 +47,6 @@
             bindings = <&kp N3>;
             label = "E_LEET";
         };
-
-        F_leet: F_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp EQUAL>;
-            label = "F_LEET";
-        };
-
-        G_leet: G_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N9>;
-            label = "G_LEET";
-        };
-
-        H_leet: H_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp HASH>;
-            label = "H_LEET";
-        };
-
-        I_leet: I_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1>;
-            label = "I_LEET";
-        };
-
-        J_leet: J_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp V>;
-            label = "J_LEET";
-        };
-
-        K_leet: K_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp LT>;
-            label = "K_LEET";
-        };
     // Endof L33T macros
     // Emoji Macros
         Red_Heart: Red_Heart {
