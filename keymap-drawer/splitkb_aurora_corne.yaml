@@ -215,3 +215,46 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  l33t:
+  - {t: ESCAPE, h: Settings}
+  - {t: Q, h: '1'}
+  - {t: W, h: '2'}
+  - {t: E, h: '3'}
+  - {t: R, h: '4'}
+  - {t: T, h: '5'}
+  - {t: Y, h: '6'}
+  - {t: U, h: '7'}
+  - {t: I, h: '8'}
+  - {t: O, h: '9'}
+  - {t: P, h: '0'}
+  - {t: BACKSPACE, h: DELETE}
+  - {t: TAB, h: LCTRL}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - ENTER
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - {t: MUTE, h: PLAY PAUSE}
+  - {t: LGUI, h: VSCode}
+  - {t: SPACE, h: sym-nav}
+  - {t: SPACE, h: Emoji}
+  - {t: RIGHT GUI, h: Settings}
+  - {t: STOP, h: STOP}
