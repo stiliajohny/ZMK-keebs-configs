@@ -243,6 +243,22 @@
 
             label = "VSCode";
         };
+
+        LeetSpeak {
+            bindings = <
+        &lt 2 &kp ESCAPE   &kp N1 &kp Q &kp N2 &kp W &kp N3 &kp 3 &kp 4 &kp R &kp N5 &kp 7 &kp N6 &kp Y &kp N7 &kp U &kp N8 &kp I &kp N9 &kp 0 &mt DELETE BACKSPACE
+        &ht LCTRL TAB &kp 4 &kp 5 &kp D &kp F &kp G &kp H &kp 7 &kp 9 &kp L &kp SQT &kp ENTER
+        &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT
+                            &ht C_PLAY_PAUSE C_MUTE &lt 4 LGUI &lt 1 SPACE &lt 3 SPACE &lt 2 RIGHT_GUI &ht C_STOP C_STOP
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+
+            label = "LeetSpeak";
+        };
+
     };
 };
 
