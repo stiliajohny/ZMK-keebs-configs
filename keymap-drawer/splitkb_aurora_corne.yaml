@@ -174,22 +174,11 @@ layers:
   - {t: ▽, type: trans}
   VSCode:
   - {t: ▽, type: trans}
-  - LG(Q)
+  - Gui+ Q
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(LG(Z))
-  - {t: LC(GRAVE), h: LC(LS(GRAVE))}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - O
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LG(S)
-  - {t: ▽, type: trans}
-  - {t: LG(F), h: LS(LG(F))}
+  - Sft+Gui+ Z
+  - {t: Ctl+ `, h: Ctl+Sft+ `}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -198,16 +187,27 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LG(Z)
+  - Gui+ S
+  - {t: ▽, type: trans}
+  - {t: Gui+ F, h: Sft+Gui+ F}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LG(COMMA)
-  - LG(PERIOD)
-  - LG(SLASH)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+ Z
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Gui+ ,
+  - Gui+ .
+  - Gui+ /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
