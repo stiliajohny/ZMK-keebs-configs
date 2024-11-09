@@ -215,3 +215,55 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  LeetSpeak:
+  - '&lt 2'
+  - ESCAPE
+  - '1'
+  - Q
+  - '2'
+  - W
+  - '3'
+  - '3'
+  - '4'
+  - R
+  - '5'
+  - '7'
+  - '6'
+  - Y
+  - '7'
+  - U
+  - '8'
+  - I
+  - '9'
+  - '0'
+  - {t: BACKSPACE, h: DELETE}
+  - {t: TAB, h: LCTRL}
+  - '4'
+  - '5'
+  - D
+  - F
+  - G
+  - H
+  - '7'
+  - '9'
+  - L
+  - ''''
+  - ENTER
+  - LEFT SHIFT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - RSHFT
+  - {t: MUTE, h: PLAY PAUSE}
+  - {t: LGUI, h: VSCode}
+  - {t: SPACE, h: sym-nav}
+  - {t: SPACE, h: Emoji}
+  - {t: RIGHT GUI, h: Settings}
+  - {t: STOP, h: STOP}
