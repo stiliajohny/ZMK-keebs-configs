@@ -2,37 +2,37 @@ layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   QWERTY:
   - {t: ESCAPE, h: l33t}
-  - '&Q_leet'
-  - '&W_leet'
-  - '&E_leet'
-  - '&R_leet'
-  - '&T_leet'
-  - '&Y_leet'
-  - '&U_leet'
-  - '&I_leet'
-  - '&O_leet'
-  - '&P_leet'
+  - {t: Q, h: '1'}
+  - {t: W, h: '2'}
+  - {t: E, h: '3'}
+  - {t: R, h: '4'}
+  - {t: T, h: '5'}
+  - {t: Y, h: '6'}
+  - {t: U, h: '7'}
+  - {t: I, h: '8'}
+  - {t: O, h: '9'}
+  - {t: P, h: '0'}
   - {t: BACKSPACE, h: DELETE}
   - {t: TAB, h: LCTRL}
-  - '&A_leet'
-  - '&S_leet'
-  - '&D_leet'
-  - '&F_leet'
-  - '&G_leet'
-  - '&H_leet'
-  - '&J_leet'
-  - '&K_leet'
-  - '&L_leet'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
   - ;
   - ENTER
   - LEFT SHIFT
-  - '&Z_leet'
-  - '&X_leet'
-  - '&C_leet'
-  - '&V_leet'
-  - '&B_leet'
-  - '&N_leet'
-  - '&M_leet'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
   - ','
   - .
   - /
@@ -41,7 +41,7 @@ layers:
   - {t: LGUI, h: VSCode}
   - {t: SPACE, h: sym-nav}
   - {t: SPACE, h: Emoji}
-  - {t: LEFT ALT, h: Settings}
+  - {t: RIGHT GUI, h: Settings}
   - {t: STOP, h: STOP}
   sym-nav:
   - {t: ▽, type: trans}
@@ -216,38 +216,38 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   l33t:
-  - {t: ESCAPE, h: Settings, type: held}
-  - {t: Q, h: '1'}
-  - {t: W, h: '2'}
-  - {t: E, h: '3'}
-  - {t: R, h: '4'}
-  - {t: T, h: '5'}
-  - {t: Y, h: '6'}
-  - {t: U, h: '7'}
-  - {t: I, h: '8'}
-  - {t: O, h: '9'}
-  - {t: P, h: '0'}
+  - {t: ESCAPE, h: QWERTY, type: held}
+  - '&Q_leet'
+  - '&W_leet'
+  - '&E_leet'
+  - '&R_leet'
+  - '&T_leet'
+  - '&Y_leet'
+  - '&U_leet'
+  - '&I_leet'
+  - '&O_leet'
+  - '&P_leet'
   - {t: BACKSPACE, h: DELETE}
   - {t: TAB, h: LCTRL}
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
+  - '&A_leet'
+  - '&S_leet'
+  - '&D_leet'
+  - '&F_leet'
+  - '&G_leet'
+  - '&H_leet'
+  - '&J_leet'
+  - '&K_leet'
+  - '&L_leet'
   - ;
   - ENTER
   - LEFT SHIFT
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
+  - '&Z_leet'
+  - '&X_leet'
+  - '&C_leet'
+  - '&V_leet'
+  - '&B_leet'
+  - '&N_leet'
+  - '&M_leet'
   - ','
   - .
   - /
@@ -256,5 +256,5 @@ layers:
   - {t: LGUI, h: VSCode}
   - {t: SPACE, h: sym-nav}
   - {t: SPACE, h: Emoji}
-  - {t: RIGHT GUI, h: Settings}
+  - {t: LEFT ALT, h: Settings}
   - {t: STOP, h: STOP}
