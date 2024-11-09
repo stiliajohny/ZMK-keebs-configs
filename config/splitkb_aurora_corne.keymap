@@ -432,13 +432,21 @@
 
             label = "VSCode";
         };
+
         LeetSpeak {
             bindings = <
-&A_leet &B_leet &C_leet &D_leet &E_leet &F_leet &G_leet &H_leet &I_leet &J_leet &K_leet &L_leet &M_leet
-&N_leet &O_leet &P_leet &Q_leet &R_leet &S_leet &T_leet &U_leet &V_leet &W_leet &X_leet &Y_leet &Z_leet
+&lt 2 ESCAPE    &ht NUMBER_1 &Q_leet  &ht NUMBER_2 &W_leet  &ht NUMBER_3 &E_leet   &ht NUMBER_4 &R_leet   &ht NUMBER_5 &T_leet    &ht NUMBER_6 &Y_leet   &ht NUMBER_7 &U_leet   &ht NUMBER_8 &I_leet     &ht NUMBER_9 &O_leet  &ht NUMBER_0 &P_leet  &mt DELETE BACKSPACE
+&ht LCTRL TAB   &A_leet       &S_leet          &D_leet                &F_leet       &G_leet           &H_leet         &J_leet       &K_leet           &L_leet       &kp SEMICOLON   &kp ENTER
+&kp LEFT_SHIFT  &Z_leet       &kp X            &C_leet                &V_leet       &B_leet           &N_leet         &kp M         &kp COMMA         &kp DOT       &kp FSLH        &kp RSHFT
+                                                &ht C_PLAY_PAUSE C_MUTE  &lt 4 LGUI      &lt 1 SPACE       &lt 3 SPACE     &lt 2 RIGHT_GUI  &ht C_STOP C_STOP
             >;
-        };
 
+            sensor-bindings =
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>,
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
+
+            label = "LeetSpeak";
+        };
     };
 };
 
