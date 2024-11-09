@@ -217,46 +217,36 @@ layers:
   - {t: ▽, type: trans}
   LeetSpeak:
   - {t: ESCAPE, h: Settings}
-  - '&ht NUMBER_1'
-  - '&Q_leet'
-  - '&ht NUMBER_2'
-  - '&W_leet'
-  - '&ht NUMBER_3'
-  - '&E_leet'
-  - '&ht NUMBER_4'
-  - '&R_leet'
-  - '&ht NUMBER_5'
-  - '&T_leet'
-  - '&ht NUMBER_6'
-  - '&Y_leet'
-  - '&ht NUMBER_7'
-  - '&U_leet'
-  - '&ht NUMBER_8'
-  - '&I_leet'
-  - '&ht NUMBER_9'
-  - '&O_leet'
-  - '&ht NUMBER_0'
-  - '&P_leet'
+  - {t: Q, h: '1'}
+  - {t: W, h: '2'}
+  - {t: E, h: '3'}
+  - {t: R, h: '4'}
+  - {t: T, h: '5'}
+  - {t: Y, h: '6'}
+  - {t: U, h: '7'}
+  - {t: I, h: '8'}
+  - {t: O, h: '9'}
+  - {t: P, h: '0'}
   - {t: BACKSPACE, h: DELETE}
   - {t: TAB, h: LCTRL}
-  - '&A_leet'
-  - '&S_leet'
-  - '&D_leet'
-  - '&F_leet'
-  - '&G_leet'
-  - '&H_leet'
-  - '&J_leet'
-  - '&K_leet'
-  - '&L_leet'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
   - ;
   - ENTER
   - LEFT SHIFT
-  - '&Z_leet'
+  - Z
   - X
-  - '&C_leet'
-  - '&V_leet'
-  - '&B_leet'
-  - '&N_leet'
+  - C
+  - V
+  - B
+  - N
   - M
   - ','
   - .
