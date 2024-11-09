@@ -432,12 +432,7 @@
 
             label = "VSCode";
         };
-        LeetSpeak {
-            bindings = <
-&A_leet &B_leet &C_leet &D_leet &E_leet &F_leet &G_leet &H_leet &I_leet &J_leet &K_leet &L_leet &M_leet
-&N_leet &O_leet &P_leet &Q_leet &R_leet &S_leet &T_leet &U_leet &V_leet &W_leet &X_leet &Y_leet &Z_leet
-            >;
-        };
+
 
 
     };
