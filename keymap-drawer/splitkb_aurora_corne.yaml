@@ -41,7 +41,7 @@ layers:
   - {t: LGUI, h: VSCode}
   - {t: SPACE, h: sym-nav}
   - {t: SPACE, h: Emoji}
-  - {t: RIGHT GUI, h: Settings}
+  - {t: LEFT ALT, h: Settings}
   - {t: STOP, h: STOP}
   sym-nav:
   - {t: ▽, type: trans}
@@ -50,9 +50,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PREV
+  - PLAY PAUSE
+  - NEXT
   - {t: '-', h: '['}
   - {t: '=', h: ']'}
   - BSPC
