@@ -12,11 +12,12 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     macros {
-    // L33T macros
+        // L33T macros
+
         A_leet: A_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N4>;
+            bindings = <&kp SLASH &kp MINUS &kp BACKSLASH>;
             label = "A_LEET";
         };
 
@@ -37,7 +38,7 @@
         D_leet: D_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PIPE &kp RPAREN>;
+            bindings = <&kp PIPE &kp RIGHT_PARENTHESIS>;
             label = "D_LEET";
         };
 
@@ -58,14 +59,14 @@
         G_leet: G_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N9>;
+            bindings = <&kp LEFT_PARENTHESIS &kp PLUS>;
             label = "G_LEET";
         };
 
         H_leet: H_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp HASH>;
+            bindings = <&kp LEFT_BRACKET &kp MINUS &kp RIGHT_BRACKET>;
             label = "H_LEET";
         };
 
@@ -79,7 +80,7 @@
         J_leet: J_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V>;
+            bindings = <&kp UNDERSCORE &kp SLASH>;
             label = "J_LEET";
         };
 
@@ -194,8 +195,10 @@
             bindings = <&kp N7 &kp UNDER>;
             label = "Z_LEET";
         };
-    // Endof L33T macros
-    // Emoji Macros
+
+        // Endof L33T macros
+        // Emoji Macros
+
         Red_Heart: Red_Heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -321,9 +324,10 @@
             bindings = <&kp COLON &kp T &kp H &kp I &kp N &kp K &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON &kp SPACE>;
             label = "THINKING_FACE";
         };
-    // Endof Emoji Macros
 
-    // Desktop Macros
+        // Endof Emoji Macros
+        // Desktop Macros
+
         next_desktop: next_desktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -337,7 +341,8 @@
             bindings = <&kp LEFT_CONTROL &kp LEFT>;
             label = "PREVIOUS_DESKTOP";
         };
-    // Endof Desktop Macros
+
+        // Endof Desktop Macros
     };
 
     behaviors {
@@ -371,10 +376,10 @@
 
         QWERTY {
             bindings = <
-                &lt 2 ESCAPE    &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P  &mt DELETE BACKSPACE
-                &ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SEMICOLON   &kp ENTER
-                &kp LEFT_SHIFT  &kp Z           &kp X           &kp C                    &kp V           &kp B             &kp N           &kp M            &kp COMMA          &kp DOT         &kp FSLH        &kp RSHFT
-                                                                &ht C_PLAY_PAUSE C_MUTE  &lt 4 LGUI      &lt 1 SPACE       &lt 3 SPACE     &lt 2 RIGHT_GUI  &ht C_STOP C_STOP
+&lt 2 ESCAPE    &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E           &ht NUMBER_4 R  &ht NUMBER_5 T    &ht NUMBER_6 Y  &ht NUMBER_7 U   &ht NUMBER_8 I     &ht NUMBER_9 O  &ht NUMBER_0 P  &mt DELETE BACKSPACE
+&ht LCTRL TAB   &kp A           &kp S           &kp D                    &kp F           &kp G             &kp H           &kp J            &kp K              &kp L           &kp SEMICOLON   &kp ENTER
+&kp LEFT_SHIFT  &kp Z           &kp X           &kp C                    &kp V           &kp B             &kp N           &kp M            &kp COMMA          &kp DOT         &kp FSLH        &kp RSHFT
+                                                &ht C_PLAY_PAUSE C_MUTE  &lt 4 LGUI      &lt 1 SPACE       &lt 3 SPACE     &lt 2 RIGHT_GUI  &ht C_STOP C_STOP
             >;
 
             sensor-bindings =
@@ -386,10 +391,10 @@
 
         sym-nav {
             bindings = <
-                &trans  &trans          &kp UP_ARROW  &trans     &trans  &trans    &trans  &trans  &trans     &ht LEFT_BRACKET MINUS  &ht RIGHT_BRACKET EQUAL  &kp BSPC
-                &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans    &trans  &trans  &trans     &kp SEMI                &kp SQT                  &kp BACKSLASH
-                &trans  &trans          &trans        &trans     &trans  &trans    &trans  &trans  &kp COMMA  &kp DOT                 &kp FSLH                 &trans
-                                                    &trans     &trans  &trans    &trans  &trans  &trans
+&trans  &trans          &kp UP_ARROW  &trans     &trans  &trans    &trans  &trans  &trans     &ht LEFT_BRACKET MINUS  &ht RIGHT_BRACKET EQUAL  &kp BSPC
+&trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans  &trans    &trans  &trans  &trans     &kp SEMI                &kp SQT                  &kp BACKSLASH
+&trans  &trans          &trans        &trans     &trans  &trans    &trans  &trans  &kp COMMA  &kp DOT                 &kp FSLH                 &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Sym/Nav";
@@ -400,10 +405,10 @@
 
         Settings {
             bindings = <
-                &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3         &none  &none  &none  &none  &none  &kp BSPC
-                &none   &none       &none         &none         &none         &ext_power EP_TOG    &none  &none  &none  &none  &none  &none
-                &none   &none       &none         &none         &none         &none                &none  &none  &none  &none  &none  &none
-                                                &none         &none         &none                &none  &none  &none
+&trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3         &none  &none  &none  &none  &none  &kp BSPC
+&none   &none       &none         &none         &none         &ext_power EP_TOG    &none  &none  &none  &none  &none  &none
+&none   &none       &none         &none         &none         &none                &none  &none  &none  &none  &none  &none
+                                  &none         &none         &none                &none  &none  &none
             >;
 
             label = "Settings ";
@@ -411,10 +416,10 @@
 
         Emoji {
             bindings = <
-                &trans  &trans  &none   &Red_Heart  &Heart_Eyes   &Broken_Heart       &Face_with_Tears_of_Joy  &Smiling_Face   &ROFL           &trans  &trans  &trans
-                &trans  &trans  &trans  &Thumbs_up  &Thumbs_Down  &Crossed_Fingers    &Party_Popper            &Birthday_Cake  &Party_Face     &trans  &trans  &trans
-                &trans  &trans  &trans  &Star       &Fire         &Rainbow            &Crying_face             &Angry_Face     &Thinking_Face  &trans  &trans  &trans
-                                        &trans      &trans        &trans              &trans                   &trans          &trans
+&trans  &trans  &none   &Red_Heart  &Heart_Eyes   &Broken_Heart       &Face_with_Tears_of_Joy  &Smiling_Face   &ROFL           &trans  &trans  &trans
+&trans  &trans  &trans  &Thumbs_up  &Thumbs_Down  &Crossed_Fingers    &Party_Popper            &Birthday_Cake  &Party_Face     &trans  &trans  &trans
+&trans  &trans  &trans  &Star       &Fire         &Rainbow            &Crying_face             &Angry_Face     &Thinking_Face  &trans  &trans  &trans
+                        &trans      &trans        &trans              &trans                   &trans          &trans
             >;
 
             label = "Emoji";
@@ -422,10 +427,10 @@
 
         VSCode {
             bindings = <
-                &trans  &kp LG(Q)  &trans     &trans  &kp LS(LG(Z))        &ht LC(LS(GRAVE)) LC(GRAVE)    &trans  &trans  &trans         &trans          &trans         &trans
-                &trans  &trans     &kp LG(S)  &trans  &ht LS(LG(F)) LG(F)  &trans                         &trans  &trans  &trans         &trans          &trans         &trans
-                &trans  &kp LG(Z)  &trans     &trans  &trans               &trans                         &trans  &trans  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &trans
-                                              &trans  &trans               &trans                         &trans  &trans  &trans
+&trans  &kp LG(Q)  &trans     &trans  &kp LS(LG(Z))        &ht LC(LS(GRAVE)) LC(GRAVE)    &trans  &trans  &trans         &trans          &trans         &trans
+&trans  &trans     &kp LG(S)  &trans  &ht LS(LG(F)) LG(F)  &trans                         &trans  &trans  &trans         &trans          &trans         &trans
+&trans  &kp LG(Z)  &trans     &trans  &trans               &trans                         &trans  &trans  &kp LG(COMMA)  &kp LG(PERIOD)  &kp LG(SLASH)  &trans
+                              &trans  &trans               &trans                         &trans  &trans  &trans
             >;
 
             label = "VSCode";
