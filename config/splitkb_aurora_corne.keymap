@@ -26,27 +26,6 @@
             bindings = <&kp PIPE &kp N3>;
             label = "B_LEET";
         };
-
-        C_leet: C_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCURLY>;
-            label = "C_LEET";
-        };
-
-        D_leet: D_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp RPAREN>;
-            label = "D_LEET";
-        };
-
-        E_leet: E_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N3>;
-            label = "E_LEET";
-        };
     // Endof L33T macros
     // Emoji Macros
         Red_Heart: Red_Heart {
