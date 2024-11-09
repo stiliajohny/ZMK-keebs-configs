@@ -101,7 +101,7 @@
         M_leet: M_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp M>;
+            bindings = <&kp NUMBER_4 &kp NUMBER_4>;
             label = "M_LEET";
         };
 
@@ -115,7 +115,7 @@
         O_leet: O_leet {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
             label = "O_LEET";
         };
 
