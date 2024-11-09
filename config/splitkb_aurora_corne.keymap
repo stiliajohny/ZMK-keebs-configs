@@ -12,191 +12,6 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     macros {
-    //l33t macros
-        A_leet: A_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N4>;
-            label = "A_LEET";
-        };
-
-        B_leet: B_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp N3>;
-            label = "B_LEET";
-        };
-
-        C_leet: C_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LCURLY>;
-            label = "C_LEET";
-        };
-
-        D_leet: D_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp RPAREN>;
-            label = "D_LEET";
-        };
-
-        E_leet: E_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N3>;
-            label = "E_LEET";
-        };
-
-        F_leet: F_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp EQUAL>;
-            label = "F_LEET";
-        };
-
-        G_leet: G_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N9>;
-            label = "G_LEET";
-        };
-
-        H_leet: H_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp HASH>;
-            label = "H_LEET";
-        };
-
-        I_leet: I_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N1>;
-            label = "I_LEET";
-        };
-
-        J_leet: J_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp V>;
-            label = "J_LEET";
-        };
-
-        K_leet: K_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp LT>;
-            label = "K_LEET";
-        };
-
-        L_leet: L_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp UNDER>;
-            label = "L_LEET";
-        };
-
-        M_leet: M_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M>;
-            label = "M_LEET";
-        };
-
-        N_leet: N_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp BACKSLASH &kp PIPE>;
-            label = "N_LEET";
-        };
-
-        O_leet: O_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N0>;
-            label = "O_LEET";
-        };
-
-        P_leet: P_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp O>;
-            label = "P_LEET";
-        };
-
-        Q_leet: Q_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N9>;
-            label = "Q_LEET";
-        };
-
-        R_leet: R_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp N2>;
-            label = "R_LEET";
-        };
-
-        S_leet: S_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N5>;
-            label = "S_LEET";
-        };
-
-        T_leet: T_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N7>;
-            label = "T_LEET";
-        };
-
-        U_leet: U_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp PIPE &kp UNDER &kp PIPE>;
-            label = "U_LEET";
-        };
-
-        V_leet: V_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSLASH &kp FSLH>;
-            label = "V_LEET";
-        };
-
-        W_leet: W_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSLASH &kp FSLH &kp BACKSLASH &kp FSLH>;
-            label = "W_LEET";
-        };
-
-        X_leet: X_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GT &kp LT>;
-            label = "X_LEET";
-        };
-
-        Y_leet: Y_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y>;
-            label = "Y_LEET";
-        };
-
-        Z_leet: Z_leet {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N7 &kp UNDER>;
-            label = "Z_LEET";
-        };
-    //end l33t macros
-
-    //Emoji macros
         Red_Heart: Red_Heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -322,7 +137,6 @@
             bindings = <&kp COLON &kp T &kp H &kp I &kp N &kp K &kp I &kp N &kp G &kp UNDER &kp F &kp A &kp C &kp E &kp COLON &kp SPACE>;
             label = "THINKING_FACE";
         };
-    //end Emoji macros
 
         next_desktop: next_desktop {
             compatible = "zmk,behavior-macro";
@@ -429,9 +243,6 @@
 
             label = "VSCode";
         };
-        
-
-
     };
 };
 
