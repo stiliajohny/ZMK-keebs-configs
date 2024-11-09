@@ -25,7 +25,7 @@ layers:
   - L
   - ;
   - ENTER
-  - LEFT SHIFT
+  - {t: LEFT SHIFT, h: LeetSpeak}
   - Z
   - X
   - C
@@ -240,7 +240,7 @@ layers:
   - '&L_leet'
   - ;
   - ENTER
-  - LEFT SHIFT
+  - {t: LEFT SHIFT, type: held}
   - '&Z_leet'
   - '&X_leet'
   - '&C_leet'
