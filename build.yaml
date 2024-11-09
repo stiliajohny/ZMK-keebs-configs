@@ -13,13 +13,16 @@
 
 ---
 include:
+  # Aurora Corne
   - board: nice_nano_v2
     shield: splitkb_aurora_corne_left nice_view_adapter nice_view
+    snippet: studio-rpc-usb-uart
     artifact-name: aurora_corne_left
   - board: nice_nano_v2
     shield: splitkb_aurora_corne_right nice_view_adapter nice_view
     artifact-name: aurora_corne_right
 
+  # Kyria
   - board: nice_nano_v2
     shield: kyria_left
     artifact-name: kyria_1_4_left
@@ -27,6 +30,7 @@ include:
     shield: kyria_right
     artifact-name: kyria_1_4_right
 
+  # Aurora Corne Reset
   - board: nice_nano_v2
     shield: settings_reset
     artifact-name: corne_reset
