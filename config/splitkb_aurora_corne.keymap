@@ -324,6 +324,7 @@
         };
     //end Emoji macros
 
+    // Other mactos
         next_desktop: next_desktop {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -337,6 +338,8 @@
             bindings = <&kp LEFT_CONTROL &kp LEFT>;
             label = "PREVIOUS_DESKTOP";
         };
+    //end of other macros
+
     };
 
     behaviors {
